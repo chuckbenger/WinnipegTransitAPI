@@ -15,8 +15,8 @@ The API is pretty simple just create and instance of WinnipegTransitRequest clas
 
 ##Dependancies
 The following libraries are required to use WinnipegTransitAPI. Android has these by default.
-commons-logging-1.1.1.jar
-httpclient-4.2.3.jar
-httpcore-4.2.2.jar
-json-java.jar
-This file was modified by IntelliJ IDEA 12.0.2 for binding GitHub repository
+* commons-logging-1.1.1.jar
+* httpclient-4.2.3.jar
+* httpcore-4.2.2.jar
+* json-java.jar
+* This file was modified by IntelliJ IDEA 12.0.2 for binding GitHub repository
