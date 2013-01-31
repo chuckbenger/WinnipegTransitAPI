@@ -15,4 +15,4 @@ The following libraries are required to use WinnipegTransitAPI. Android has thes
 * commons-logging-1.1.1.jar
 * httpclient-4.2.3.jar
 * httpcore-4.2.2.jar
-* json-java.jar
+* simple-xml-2.6.9.jar

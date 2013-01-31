@@ -6,18 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f51a1c7-2595-4db7-904a-9f88be8322d4" name="Default" comment="Added XML conversions for locations request">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/message/MessageNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/service/NoticeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/message/SystemMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/filter/IdentityQuery.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/IdentityQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/LocationService.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/LocationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/filter/Query.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/Query.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/result/status/Status.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/status/Status.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/StatusService.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/StatusService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WinnipegTransitAPI.iws" />
@@ -33,7 +22,7 @@
     <file path="/Location.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359671330784" ignored="false" />
     <file path="/WildCardQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359604962152" ignored="false" />
     <file path="/readme" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598576310" ignored="false" />
-    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359673995249" ignored="false" />
+    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359674588655" ignored="false" />
     <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359662060355" ignored="false" />
     <file path="/APIMode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599790196" ignored="false" />
     <file path="/ServiceNotFound.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600829882" ignored="false" />
@@ -119,7 +108,17 @@
     <favorites_list name="WinnipegTransitAPI" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="22" selection-start="744" selection-end="744" vertical-scroll-proportion="0.33142203">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -137,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/chuck/service/Location.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/service/Status.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java" />
@@ -153,6 +151,7 @@
         <option value="$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/filter/IdentityQuery.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/service/LocationService.java" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -355,6 +354,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WinnipegTransitAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WinnipegTransitAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -642,12 +655,16 @@
       <created>1359673026529</created>
       <updated>1359673026529</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added XML conversions for system messages">
+      <created>1359674593845</created>
+      <updated>1359674593845</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -658,6 +675,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739422" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -671,7 +689,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739422" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -715,7 +732,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added XML conversions for status requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added XML conversions for system messages" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -734,6 +751,7 @@
     <MESSAGE value="Added check and test for invalid an result from the server" />
     <MESSAGE value="Added XML conversions for locations request" />
     <MESSAGE value="Added XML conversions for status requests" />
+    <MESSAGE value="Added XML conversions for system messages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -804,7 +822,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="0" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.39016017">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -812,13 +830,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/StatusService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="15" selection-start="1929" selection-end="1929" vertical-scroll-proportion="0.7276888">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -863,6 +874,13 @@
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/location/Intersection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="48" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.6235698">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="22" selection-start="744" selection-end="744" vertical-scroll-proportion="0.33142203">
           <folding />
         </state>
       </provider>
