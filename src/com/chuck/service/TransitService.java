@@ -56,5 +56,5 @@ public abstract class TransitService {
      *
      * @return returns the api transitService name
      */
-    public abstract String getServiceName(APIMode apiMode);
+    public abstract String getServiceName();
 }

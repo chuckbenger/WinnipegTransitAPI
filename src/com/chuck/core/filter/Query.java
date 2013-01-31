@@ -1,6 +1,5 @@
 package com.chuck.core.filter;
 
-import com.chuck.service.APIMode;
 import com.chuck.service.TransitService;
 import org.apache.http.client.methods.HttpGet;
 
@@ -34,5 +33,5 @@ public abstract class Query {
 
     public abstract void setAPIKey(String apiKey);
 
-    public abstract HttpGet buildQuery(APIMode apiMode);
+    public abstract HttpGet buildQuery();
 }

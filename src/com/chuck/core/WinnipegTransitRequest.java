@@ -2,14 +2,12 @@ package com.chuck.core;
 
 import com.chuck.core.exceptions.ServiceNotFound;
 import com.chuck.core.filter.Query;
-import com.chuck.service.APIMode;
 import com.chuck.service.TransitService;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,18 +36,6 @@ public class WinnipegTransitRequest {
 
     private final HttpClient httpClient = new DefaultHttpClient();
 
-
-    /**
-     * Sends a request to the server requesting json
-     *
-     * @param query the query to send
-     * @return returns a JSON object
-     * @throws Exception
-     */
-    public JSONObject sendJSONRequest(Query query) throws Exception {
-        return new JSONObject(sendRequest(query, APIMode.JSON));
-    }
-
     /**
      * Sends a request to the server requestion xml
      *
@@ -58,7 +44,7 @@ public class WinnipegTransitRequest {
      * @throws Exception
      */
     public String sendXMLRequest(Query query) throws Exception {
-        return sendRequest(query, APIMode.XML);
+        return sendRequest(query);
     }
 
     /**
@@ -68,13 +54,13 @@ public class WinnipegTransitRequest {
      * @return returns the query result
      * @throws Exception exception occurred during request
      */
-    private String sendRequest(Query query, APIMode apiMode) throws Exception {
+    private String sendRequest(Query query) throws Exception {
 
         String queryResult = null;
 
         try {
             query.setAPIKey(TransitService.getApiKey());
-            HttpGet httpGet = query.buildQuery(apiMode);
+            HttpGet httpGet = query.buildQuery();
             HttpResponse response = httpClient.execute(httpGet);
             String result = parseResponse(response).trim();
 

@@ -1,6 +1,5 @@
 package com.chuck.core.filter;
 
-import com.chuck.service.APIMode;
 import com.chuck.service.TransitService;
 import org.apache.http.client.methods.HttpGet;
 
@@ -43,7 +42,7 @@ public class IdentityQuery extends Query {
     }
 
     @Override
-    public HttpGet buildQuery(APIMode apiMode) {
+    public HttpGet buildQuery() {
         String url = BASE_REQUEST_URL_WITH_PROTOCOL + identity + "?api-key=" + apiKey;
         return new HttpGet(url);
     }

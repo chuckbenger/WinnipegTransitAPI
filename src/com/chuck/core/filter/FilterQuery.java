@@ -1,6 +1,5 @@
 package com.chuck.core.filter;
 
-import com.chuck.service.APIMode;
 import com.chuck.service.TransitService;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpGet;
@@ -68,12 +67,12 @@ public class FilterQuery extends Query {
      * @return returns the  HTTP get
      */
     @Override
-    public HttpGet buildQuery(APIMode apiMode) {
+    public HttpGet buildQuery() {
         URIBuilder builder = new URIBuilder();
 
         builder.setScheme("http");
         builder.setHost(BASE_REQUEST_URL);
-        builder.setPath(transitService.getServiceName(apiMode));
+        builder.setPath(transitService.getServiceName());
         builder.setQuery(URLEncodedUtils.format(parameters, "UTF-8"));
         HttpGet get = null;
 

@@ -2,6 +2,9 @@ package com.chuck.service;
 
 import com.chuck.core.WinnipegTransitRequest;
 import com.chuck.core.filter.FilterQuery;
+import com.chuck.core.result.status.Status;
+import org.simpleframework.xml.Serializer;
+import org.simpleframework.xml.core.Persister;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,34 +24,44 @@ import com.chuck.core.filter.FilterQuery;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class Status extends TransitService {
+public class StatusService extends TransitService {
 
-    private static final Status INSTANCE = new Status();
+    private static StatusService INSTANCE;
+    private Serializer serializer;
 
-    public Status() {
+    public StatusService() {
         requester = new WinnipegTransitRequest();
+        serializer = new Persister();
     }
 
     /**
-     * Returns an pre-created instance of Status
+     * Returns an instance of StatusService
      *
-     * @return returns a Status object
+     * @return returns a StatusService object
      */
-    public static Status getInstance() {
+    public static StatusService getInstance() {
+
+        if (INSTANCE == null)
+            INSTANCE = new StatusService();
+
         return INSTANCE;
     }
 
     /**
-     * Builds a request that gets the current transit status
+     * Builds a request and gets the current transit status
      *
-     * @return returns the new status
+     * @return returns the status of the transit service
      */
-    public FilterQuery getTransitStatus() {
-        return new FilterQuery(this);
+    public Status getTransitStatus() throws Exception {
+
+        FilterQuery filterQuery = new FilterQuery(this);
+        String xml = requester.sendXMLRequest(filterQuery);
+        Status status = serializer.read(Status.class, xml);
+        return status;
     }
 
     @Override
-    public String getServiceName(APIMode apiMode) {
-        return "statuses" + (apiMode == APIMode.JSON ? ".json" : "");
+    public String getServiceName() {
+        return "statuses";
     }
 }

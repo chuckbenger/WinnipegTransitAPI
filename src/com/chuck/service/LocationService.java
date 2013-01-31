@@ -26,21 +26,29 @@ import org.simpleframework.xml.core.Persister;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class Location extends TransitService {
+public class LocationService extends TransitService {
 
-    private static final Location INSTANCE = new Location();
-    private Serializer serializer = new Persister();
+    private static LocationService INSTANCE;
+    private Serializer serializer;
 
-    public Location() {
+    /**
+     * Creates the request and serializer objects
+     */
+    private LocationService() {
         requester = new WinnipegTransitRequest();
+        serializer = new Persister();
     }
 
     /**
-     * Returns an pre-created instance of location
+     * Returns an instance of LocationService.
      *
-     * @return returns a Location object
+     * @return returns a LocationService object
      */
-    public static Location getInstance() {
+    public static LocationService getInstance() {
+
+        if (INSTANCE == null)
+            INSTANCE = new LocationService();
+
         return INSTANCE;
     }
 
@@ -110,8 +118,8 @@ public class Location extends TransitService {
     }
 
     @Override
-    public String getServiceName(APIMode apiMode) {
-        return "locations" + (apiMode == APIMode.JSON ? ".json" : "");
+    public String getServiceName() {
+        return "locations";
     }
 }
 
