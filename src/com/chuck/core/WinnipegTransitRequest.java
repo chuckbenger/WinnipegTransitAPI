@@ -37,7 +37,7 @@ public class WinnipegTransitRequest {
     private final HttpClient httpClient = new DefaultHttpClient();
 
     /**
-     * Sends a request to the server requestion xml
+     * Sends a request to the server requesting xml
      *
      * @param query the query to send
      * @return returns a xml string
@@ -56,7 +56,7 @@ public class WinnipegTransitRequest {
      */
     private String sendRequest(Query query) throws Exception {
 
-        String queryResult = null;
+        String queryResult;
 
         try {
             query.setAPIKey(TransitService.getApiKey());
@@ -64,10 +64,10 @@ public class WinnipegTransitRequest {
             HttpResponse response = httpClient.execute(httpGet);
             String result = parseResponse(response).trim();
 
-            if (!validResult(result))
+            if (validResult(result))
+                queryResult = result;
+            else
                 throw new ServiceNotFound(httpGet.getURI().toString() + " transitService was not found");
-
-            queryResult = result;
 
         } catch (Exception e) {
             throw e;
@@ -97,8 +97,7 @@ public class WinnipegTransitRequest {
     private static String parseResponse(HttpResponse response) throws IOException {
 
         HttpEntity entity = response.getEntity();
-        String result = convertStreamToString(entity.getContent());
-        return result;
+        return convertStreamToString(entity.getContent());
     }
 
     /**
@@ -110,12 +109,12 @@ public class WinnipegTransitRequest {
     private static String convertStreamToString(InputStream is) {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-        StringBuilder sb = new StringBuilder();
+        String xml = "";
 
         String line;
         try {
             while ((line = reader.readLine()) != null) {
-                sb.append((line + "\n"));
+                xml += line;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -126,7 +125,7 @@ public class WinnipegTransitRequest {
                 e.printStackTrace();
             }
         }
-        return sb.toString();
+        return xml;
     }
 
 }

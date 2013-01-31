@@ -23,7 +23,7 @@ import org.apache.http.client.methods.HttpGet;
  */
 public abstract class Query {
 
-    protected TransitService transitService;
+    protected final TransitService transitService;
     protected final String BASE_REQUEST_URL = "api.winnipegtransit.com/";
     protected final String BASE_REQUEST_URL_WITH_PROTOCOL = "http://" + BASE_REQUEST_URL;
 

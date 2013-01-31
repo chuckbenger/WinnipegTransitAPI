@@ -2,7 +2,7 @@ package com.chuck.service;
 
 import com.chuck.core.WinnipegTransitRequest;
 import com.chuck.core.filter.FilterQuery;
-import com.chuck.core.result.status.Status;
+import com.chuck.core.result.message.SystemMessage;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 
@@ -24,44 +24,71 @@ import org.simpleframework.xml.core.Persister;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class StatusService extends TransitService {
+public class NoticeService extends TransitService {
 
-    private static StatusService INSTANCE;
+    private static NoticeService INSTANCE;
     private final Serializer serializer;
 
-    public StatusService() {
+    public NoticeService() {
         requester = new WinnipegTransitRequest();
         serializer = new Persister();
     }
 
     /**
-     * Returns an instance of StatusService
+     * Returns an instance of NoticeService
      *
-     * @return returns a StatusService object
+     * @return returns a NoticeService object
      */
-    public static StatusService getInstance() {
+    public static NoticeService getInstance() {
 
         if (INSTANCE == null)
-            INSTANCE = new StatusService();
+            INSTANCE = new NoticeService();
 
         return INSTANCE;
     }
 
     /**
-     * Builds a request and gets the current transit status
+     * Sends a web request to get any system messages which are usually urgent notices
      *
-     * @return returns the status of the transit service
+     * @return returns a System Message object which contains any messages
+     * @throws Exception
      */
-    public Status getTransitStatus() throws Exception {
-
+    public SystemMessage getSystemMessages() throws Exception {
         FilterQuery filterQuery = new FilterQuery(this);
         String xml = requester.sendXMLRequest(filterQuery);
 
-        return serializer.read(Status.class, xml);
+        return serializer.read(SystemMessage.class, xml);
     }
 
     @Override
     public String getServiceName() {
-        return "statuses";
+        return "system-messages";
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

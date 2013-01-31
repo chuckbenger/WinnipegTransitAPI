@@ -1,4 +1,4 @@
-package com.chuck.core.result.status;
+package com.chuck.core.result.message;
 
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.ElementList;
@@ -25,8 +25,8 @@ import java.util.List;
  * under the License.
  */
 
-@Root(name = "statuses")
-public class Status {
+@Root(name = "system-messages")
+public class SystemMessage {
 
     @Attribute
     private String base;
@@ -34,8 +34,8 @@ public class Status {
     @Attribute(name = "query-time")
     private String queryTime;
 
-    @ElementList(required = false, inline = true)
-    private List<StatusNode> status;
+    @ElementList(inline = true, required = false)
+    private List<MessageNode> message;
 
     public String getBase() {
         return base;
@@ -45,32 +45,16 @@ public class Status {
         return queryTime;
     }
 
-    public List<StatusNode> getStatuses() {
-        return status;
+    public List<MessageNode> getMessages() {
+        return message;
     }
 
     @Override
     public String toString() {
-        return "StatusService{" +
-                ", \nbase='" + base + '\'' +
+        return "SystemMessage{" +
+                "\nbase='" + base + '\'' +
                 ", \nqueryTime='" + queryTime + '\'' +
-                ", \nstatus=" + status +
+                ", message=" + message +
                 '}';
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
-package com.chuck.core.filter;
+package com.chuck.core.result.message;
 
-import com.chuck.service.TransitService;
-import org.apache.http.client.methods.HttpGet;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,29 +21,29 @@ import org.apache.http.client.methods.HttpGet;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class IdentityQuery extends Query {
 
-    private String apiKey;
-    private final String identity;
+@Root(name = "message")
+public class MessageNode {
 
-    /**
-     * Creates a new Identity Query query for the input transitService
-     *
-     * @param transitService The transitService this query will be used on
-     */
-    public IdentityQuery(TransitService transitService, String identity) {
-        super(transitService);
-        this.identity = identity;
+    @Element
+    private String type;
+
+    @Element
+    private String message;
+
+    public String getType() {
+        return type;
+    }
+
+    public String getMessage() {
+        return message;
     }
 
     @Override
-    public void setAPIKey(String apiKey) {
-        this.apiKey = apiKey;
-    }
-
-    @Override
-    public HttpGet buildQuery() {
-        String url = BASE_REQUEST_URL_WITH_PROTOCOL + identity + "?api-key=" + apiKey;
-        return new HttpGet(url);
+    public String toString() {
+        return "MessageNode{" +
+                "\ntype='" + type + '\'' +
+                ", \nmessage='" + message + '\'' +
+                '}';
     }
 }

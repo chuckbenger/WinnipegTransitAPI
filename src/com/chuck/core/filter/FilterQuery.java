@@ -30,7 +30,7 @@ import java.util.ArrayList;
  */
 public class FilterQuery extends Query {
 
-    private ArrayList<NameValuePair> parameters = new ArrayList<NameValuePair>();
+    private final ArrayList<NameValuePair> parameters = new ArrayList<NameValuePair>();
 
     /**
      * Creates a new filter query for the input transitService

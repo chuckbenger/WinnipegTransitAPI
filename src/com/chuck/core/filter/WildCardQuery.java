@@ -23,7 +23,7 @@ import org.apache.http.client.methods.HttpGet;
  */
 public class WildCardQuery extends Query {
 
-    private String wildCard;
+    private final String wildCard;
     private String apiKey;
 
     /**

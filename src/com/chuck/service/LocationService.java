@@ -29,7 +29,7 @@ import org.simpleframework.xml.core.Persister;
 public class LocationService extends TransitService {
 
     private static LocationService INSTANCE;
-    private Serializer serializer;
+    private final Serializer serializer;
 
     /**
      * Creates the request and serializer objects
@@ -75,8 +75,8 @@ public class LocationService extends TransitService {
     /**
      * Creates a new filter query returns the locations around the Geographic coordinates
      *
-     * @param latitude
-     * @param longitude
+     * @param latitude   The latitude to find locations around
+     * @param longitude  The longitude to find locations around
      * @param distance   the distance in meters from the coordinates
      * @param maxResults the maximum number of results
      * @return returns a new query object
@@ -102,9 +102,7 @@ public class LocationService extends TransitService {
     private Locations executeQuery(Query query) throws Exception {
 
         String xml = requester.sendXMLRequest(query);
-        Locations locations = serializer.read(Locations.class, xml);
-
-        return locations;
+        return serializer.read(Locations.class, xml);
     }
 
     /**
