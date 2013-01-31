@@ -1,12 +1,7 @@
-package com.chuck.test;
+package com.chuck.core.filter;
 
-import com.chuck.core.WinnipegTransitRequest;
-import com.chuck.core.result.Result;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-
-import static junit.framework.Assert.assertTrue;
+import com.chuck.service.Service;
+import org.apache.http.client.methods.HttpGet;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -26,15 +21,16 @@ import static junit.framework.Assert.assertTrue;
  * specific language governing permissions and limitations
  * under the License.
  */
+public abstract class Query {
 
-@RunWith(JUnit4.class)
-public class RequestTest {
+    protected Service service;
+    protected final String BASE_REQUEST_URL = "api.winnipegtransit.com/";
+    protected final String BASE_REQUEST_URL_WITH_PROTOCOL = "http://" + BASE_REQUEST_URL;
 
-    @Test
-    public void nullQueryObjectShouldReturnNull() {
-        WinnipegTransitRequest request = new WinnipegTransitRequest("");
-        Result resp = request.sendRequest(null);
-        assertTrue("Null query object should return null",resp == null);
+    protected Query(Service service) {
+        this.service = service;
     }
 
+    public abstract void setAPIKey(String apiKey);
+    public abstract HttpGet buildQuery();
 }

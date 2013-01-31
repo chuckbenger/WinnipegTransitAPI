@@ -2,25 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f51a1c7-2595-4db7-904a-9f88be8322d4" name="Default" comment="First commit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/service/APIMode.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/Main.java" />
+      <change type="MOVED" beforePath="C:\Users\Charles\workspace\WinnipegTransitAPI\src\com\chuck\core\FilterQuery.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java" />
+      <change type="MOVED" beforePath="C:\Users\Charles\workspace\WinnipegTransitAPI\src\com\chuck\core\Query.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/Query.java" />
+      <change type="MOVED" beforePath="C:\Users\Charles\workspace\WinnipegTransitAPI\src\com\chuck\core\Result.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/Result.java" />
+      <change type="MOVED" beforePath="C:\Users\Charles\workspace\WinnipegTransitAPI\src\com\chuck\core\WildCardQuery.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/Location.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/Location.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" afterPath="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/Service.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/Service.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WinnipegTransitAPI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/WinnipegTransitRequest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359594710839" ignored="false" />
+    <file path="/WinnipegTransitRequest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600113687" ignored="false" />
     <file path="/Request.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359584887319" ignored="false" />
-    <file path="/Query.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359597822972" ignored="false" />
-    <file path="/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598423377" ignored="false" />
+    <file path="/Query.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599444000" ignored="false" />
+    <file path="/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600215418" ignored="false" />
     <file path="/fragment.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359595134271" ignored="false" />
-    <file path="/FilterQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359597530707" ignored="false" />
-    <file path="/Service.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359595859253" ignored="false" />
+    <file path="/FilterQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599455334" ignored="false" />
+    <file path="/Service.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600189133" ignored="false" />
     <file path="/RequestTest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359594094842" ignored="false" />
-    <file path="/Location.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598455606" ignored="false" />
-    <file path="/WildCardQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359597849534" ignored="false" />
+    <file path="/Location.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600056547" ignored="false" />
+    <file path="/WildCardQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599449262" ignored="false" />
     <file path="/readme" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598576310" ignored="false" />
-    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598978466" ignored="false" />
-    <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598999484" ignored="false" />
+    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599003723" ignored="false" />
+    <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600291733" ignored="false" />
+    <file path="/APIMode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599790196" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +92,7 @@
       <file leaf-file-name="Location.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chuck/service/Location.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="70" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.0">
+            <state line="23" column="29" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,30 +103,10 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="102" selection-start="270" selection-end="288" vertical-scroll-proportion="0.0">
+            <state line="12" column="41" selection-start="367" selection-end="401" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WildCardQuery.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chuck/core/WildCardQuery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="7" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Query.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chuck/core/Query.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="45" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -124,7 +114,39 @@
       <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="68" selection-start="867" selection-end="867" vertical-scroll-proportion="0.35091743">
+            <state line="12" column="12" selection-start="621" selection-end="621" vertical-scroll-proportion="0.35416666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WinnipegTransitRequest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="26" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterQuery.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="47" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1291#1306#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Service.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chuck/service/Service.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="17" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,15 +172,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/chuck/service/Request.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/service/Query.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/service/FilterQuery.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/service/Service.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/core/FilterQuery.java" />
+        <option value="$PROJECT_DIR$/readme" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/Query.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/WildCardQuery.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/core/FilterQuery.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/service/APIMode.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/service/Location.java" />
-        <option value="$PROJECT_DIR$/readme" />
+        <option value="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/service/Service.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/Main.java" />
         <option value="$PROJECT_DIR$/readme.md" />
       </list>
@@ -301,6 +324,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WinnipegTransitAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WinnipegTransitAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chuck" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,12 +573,16 @@
       <created>1359598933368</created>
       <updated>1359598933368</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First commit">
+      <created>1359599007650</created>
+      <updated>1359599007650</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -545,8 +598,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -635,7 +688,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/Result.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="19" selection-start="861" selection-end="861" vertical-scroll-proportion="0.38990825">
           <folding />
@@ -651,9 +704,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/filter/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="30" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="19" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.61009175">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/APIMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="8" selection-start="884" selection-end="884" vertical-scroll-proportion="0.42889908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="34" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0">
+        <state line="56" column="26" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="47" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1291#1306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="367" selection-end="401" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -662,58 +768,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="861" selection-end="861" vertical-scroll-proportion="0.5902778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/FilterQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="36" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.3402778">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1284#1299#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/WildCardQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="7" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="70" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="102" selection-start="270" selection-end="288" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="45" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+        <state line="37" column="17" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="68" selection-start="867" selection-end="867" vertical-scroll-proportion="0.35091743">
+        <state line="12" column="12" selection-start="621" selection-end="621" vertical-scroll-proportion="0.35416666">
           <folding />
         </state>
       </provider>

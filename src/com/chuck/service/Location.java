@@ -1,7 +1,7 @@
 package com.chuck.service;
 
-import com.chuck.core.FilterQuery;
-import com.chuck.core.WildCardQuery;
+import com.chuck.core.filter.FilterQuery;
+import com.chuck.core.filter.WildCardQuery;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,7 +21,7 @@ import com.chuck.core.WildCardQuery;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class Location implements Service {
+public class Location extends Service {
 
     private static final Location INSTANCE = new Location();
 
@@ -71,7 +71,6 @@ public class Location implements Service {
         return query;
     }
 
-
     /**
      * Creates new wild card query
      * @param wildCard the filter
@@ -83,6 +82,22 @@ public class Location implements Service {
 
     @Override
     public String getServiceName() {
-        return "locations";
+        return "locations" + (apiMode == APIMode.JSON ? ".json" : "");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

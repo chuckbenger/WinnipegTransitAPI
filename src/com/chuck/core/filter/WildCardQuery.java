@@ -1,10 +1,7 @@
-package com.chuck.core;
+package com.chuck.core.filter;
 
 import com.chuck.service.Service;
 import org.apache.http.client.methods.HttpGet;
-
-import java.io.UnsupportedEncodingException;
-import java.net.URISyntaxException;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -40,7 +37,7 @@ public class WildCardQuery extends Query {
     }
 
     @Override
-    public void addAPIKey(String apiKey) {
+    public void setAPIKey(String apiKey) {
         this.apiKey = apiKey;
     }
 

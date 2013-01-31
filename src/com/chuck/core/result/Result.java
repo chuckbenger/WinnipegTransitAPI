@@ -1,7 +1,4 @@
-package com.chuck.core;
-
-import com.chuck.service.Service;
-import org.apache.http.client.methods.HttpGet;
+package com.chuck.core.result;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,16 +18,5 @@ import org.apache.http.client.methods.HttpGet;
  * specific language governing permissions and limitations
  * under the License.
  */
-public abstract class Query {
-
-    protected Service service;
-    protected final String BASE_REQUEST_URL = "api.winnipegtransit.com/";
-    protected final String BASE_REQUEST_URL_WITH_PROTOCOL = "http://" + BASE_REQUEST_URL;
-
-    protected Query(Service service) {
-        this.service = service;
-    }
-
-    public abstract void addAPIKey(String apiKey);
-    public abstract HttpGet buildQuery();
+public class Result {
 }

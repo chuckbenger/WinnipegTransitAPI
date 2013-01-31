@@ -1,4 +1,4 @@
-package com.chuck.core;
+package com.chuck.service;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -18,5 +18,7 @@ package com.chuck.core;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class Result {
+public enum APIMode {
+    XML,
+    JSON
 }

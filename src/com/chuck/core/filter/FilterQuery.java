@@ -1,4 +1,4 @@
-package com.chuck.core;
+package com.chuck.core.filter;
 
 import com.chuck.service.Service;
 import org.apache.http.NameValuePair;
@@ -55,7 +55,7 @@ public class FilterQuery extends Query {
      * @param apiKey the api key
      */
     @Override
-    public void addAPIKey(String apiKey) {
+    public void setAPIKey(String apiKey) {
         addParameter("api-key", apiKey);
     }
 

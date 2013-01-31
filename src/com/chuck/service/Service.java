@@ -18,8 +18,24 @@ package com.chuck.service;
  * specific language governing permissions and limitations
  * under the License.
  */
-public interface Service {
+public abstract class Service {
 
+    /**
+     * Whether the we are requesting xml ro json
+     */
+    protected static APIMode apiMode = APIMode.XML;
+
+    /**
+     * Gets the api service name set by the implementing class.
+     * @return returns the api service name
+     */
     public abstract String getServiceName();
 
+    /**
+     * Sets the api mode to use (XML or JSON).
+     * @param newMode the api mode to set to
+     */
+    public final static void setAPIMode(APIMode newMode) {
+        apiMode = newMode;
+    }
 }

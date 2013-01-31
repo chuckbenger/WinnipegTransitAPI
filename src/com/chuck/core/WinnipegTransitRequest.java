@@ -1,5 +1,7 @@
 package com.chuck.core;
 
+import com.chuck.core.filter.Query;
+import com.chuck.core.result.Result;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -54,7 +56,7 @@ public class WinnipegTransitRequest {
         Result queryResult = null;
 
         try {
-            query.addAPIKey(apiKey);
+            query.setAPIKey(apiKey);
             HttpGet httpGet = query.buildQuery();
             HttpResponse response = httpClient.execute(httpGet);
             queryResult = parseResponse(response);
