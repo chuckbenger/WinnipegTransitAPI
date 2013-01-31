@@ -1,8 +1,6 @@
-package com.chuck.core.filter;
+package com.chuck.service;
 
-import com.chuck.service.APIMode;
-import com.chuck.service.TransitService;
-import org.apache.http.client.methods.HttpGet;
+import com.chuck.core.WinnipegTransitRequest;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,17 +20,41 @@ import org.apache.http.client.methods.HttpGet;
  * specific language governing permissions and limitations
  * under the License.
  */
-public abstract class Query {
+public abstract class TransitService {
 
-    protected TransitService transitService;
-    protected final String BASE_REQUEST_URL = "api.winnipegtransit.com/";
-    protected final String BASE_REQUEST_URL_WITH_PROTOCOL = "http://" + BASE_REQUEST_URL;
+    /**
+     * API key to use for requests
+     */
+    private static String apiKey;
 
-    protected Query(TransitService transitService) {
-        this.transitService = transitService;
+    /**
+     * Gets the api get
+     *
+     * @return returns the api key
+     */
+    public static String getApiKey() {
+        return apiKey;
     }
 
-    public abstract void setAPIKey(String apiKey);
+    /**
+     * Sets the api key
+     *
+     * @param apiKey
+     */
+    public static void init(String apiKey) {
+        TransitService.apiKey = apiKey;
+    }
 
-    public abstract HttpGet buildQuery(APIMode apiMode);
+    /**
+     * All services shared the same requester instance
+     */
+    protected WinnipegTransitRequest requester;
+
+
+    /**
+     * Gets the api transitService name set by the implementing class.
+     *
+     * @return returns the api transitService name
+     */
+    public abstract String getServiceName(APIMode apiMode);
 }

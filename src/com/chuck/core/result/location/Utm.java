@@ -1,8 +1,8 @@
-package com.chuck.core.filter;
+package com.chuck.core.result.location;
 
-import com.chuck.service.APIMode;
-import com.chuck.service.TransitService;
-import org.apache.http.client.methods.HttpGet;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,18 +21,67 @@ import org.apache.http.client.methods.HttpGet;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+ * <p/>
+ * User: chuck
+ * Date: 31/01/13
+ * Time: 1:01 PM
  */
-public abstract class Query {
 
-    protected TransitService transitService;
-    protected final String BASE_REQUEST_URL = "api.winnipegtransit.com/";
-    protected final String BASE_REQUEST_URL_WITH_PROTOCOL = "http://" + BASE_REQUEST_URL;
+@Root
+public class Utm {
 
-    protected Query(TransitService transitService) {
-        this.transitService = transitService;
+    @Attribute
+    private String zone;
+
+    @Element
+    private Double x;
+
+    @Element
+    private Double y;
+
+    public String getZone() {
+        return zone;
     }
 
-    public abstract void setAPIKey(String apiKey);
+    public Double getX() {
+        return x;
+    }
 
-    public abstract HttpGet buildQuery(APIMode apiMode);
+    public Double getY() {
+        return y;
+    }
+
+    @Override
+    public String toString() {
+        return "Utm{" +
+                "zone='" + zone + '\'' +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

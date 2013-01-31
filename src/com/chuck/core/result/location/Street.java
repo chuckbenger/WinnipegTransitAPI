@@ -1,7 +1,8 @@
-package com.chuck.service;
+package com.chuck.core.result.location;
 
-import com.chuck.core.WinnipegTransitRequest;
-import com.chuck.core.filter.FilterQuery;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -20,35 +21,62 @@ import com.chuck.core.filter.FilterQuery;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+ * <p/>
+ * User: chuck
+ * Date: 31/01/13
+ * Time: 12:56 PM
  */
-public class Status extends TransitService {
 
-    private static final Status INSTANCE = new Status();
+@Root
+public class Street {
 
-    public Status() {
-        requester = new WinnipegTransitRequest();
+    @Attribute
+    private String href;
+
+    @Element
+    private String key;
+
+    @Element
+    private String name;
+
+    @Element
+    private StreetType type;
+
+    public String getHref() {
+        return href;
     }
 
-    /**
-     * Returns an pre-created instance of Status
-     *
-     * @return returns a Status object
-     */
-    public static Status getInstance() {
-        return INSTANCE;
+    public String getKey() {
+        return key;
     }
 
-    /**
-     * Builds a request that gets the current transit status
-     *
-     * @return returns the new status
-     */
-    public FilterQuery getTransitStatus() {
-        return new FilterQuery(this);
+    public String getName() {
+        return name;
+    }
+
+    public StreetType getType() {
+        return type;
     }
 
     @Override
-    public String getServiceName(APIMode apiMode) {
-        return "statuses" + (apiMode == APIMode.JSON ? ".json" : "");
+    public String toString() {
+        return "Street{" +
+                "href='" + href + '\'' +
+                ", key=" + key +
+                ", name='" + name + '\'' +
+                ", type=" + type +
+                '}';
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,12 @@
 package com.chuck.service;
 
+import com.chuck.core.WinnipegTransitRequest;
 import com.chuck.core.filter.FilterQuery;
+import com.chuck.core.filter.Query;
 import com.chuck.core.filter.WildCardQuery;
+import com.chuck.core.result.location.Locations;
+import org.simpleframework.xml.Serializer;
+import org.simpleframework.xml.core.Persister;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,12 +26,18 @@ import com.chuck.core.filter.WildCardQuery;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class Location implements Service {
+public class Location extends TransitService {
 
     private static final Location INSTANCE = new Location();
+    private Serializer serializer = new Persister();
+
+    public Location() {
+        requester = new WinnipegTransitRequest();
+    }
 
     /**
      * Returns an pre-created instance of location
+     *
      * @return returns a Location object
      */
     public static Location getInstance() {
@@ -35,13 +46,14 @@ public class Location implements Service {
 
     /**
      * Creates a new filter query returning locations around the UTM x, y coordinate
-     * @param x the utm x coordinate
-     * @param y the utm y coordinate
-     * @param distance the distance in meters from the coordinates
+     *
+     * @param x          the Utm x coordinate
+     * @param y          the Utm y coordinate
+     * @param distance   the distance in meters from the coordinates
      * @param maxResults the maximum number of results
      * @return returns a new query object
      */
-    public FilterQuery atUTMCoordinate(int x, int y, int distance, int maxResults) {
+    public Locations atUTMCoordinate(int x, int y, int distance, int maxResults) throws Exception {
         FilterQuery query = new FilterQuery(this);
 
         query.addParameter("x", x);
@@ -49,18 +61,19 @@ public class Location implements Service {
         query.addParameter("distance", distance);
         query.addParameter("max-results", maxResults);
 
-        return query;
+        return executeQuery(query);
     }
 
     /**
      * Creates a new filter query returns the locations around the Geographic coordinates
+     *
      * @param latitude
      * @param longitude
-     * @param distance the distance in meters from the coordinates
+     * @param distance   the distance in meters from the coordinates
      * @param maxResults the maximum number of results
      * @return returns a new query object
      */
-    public FilterQuery atGeographicCoordinate(double latitude , double longitude, int distance, int maxResults) {
+    public Locations atGeographicCoordinate(double latitude, double longitude, int distance, int maxResults) throws Exception {
         FilterQuery query = new FilterQuery(this);
 
         query.addParameter("lat", latitude);
@@ -68,16 +81,32 @@ public class Location implements Service {
         query.addParameter("distance", distance);
         query.addParameter("max-results", maxResults);
 
-        return query;
+        return executeQuery(query);
+    }
+
+    /**
+     * Executes the input query and returns a Locations instance
+     *
+     * @param query the query to execute
+     * @return returns the Locations instance
+     * @throws Exception
+     */
+    private Locations executeQuery(Query query) throws Exception {
+
+        String xml = requester.sendXMLRequest(query);
+        Locations locations = serializer.read(Locations.class, xml);
+
+        return locations;
     }
 
     /**
      * Creates new wild card query
+     *
      * @param wildCard the filter
      * @return returns a new wild card query
      */
-    public WildCardQuery atWildCardLocation(String wildCard) {
-        return new WildCardQuery(this, wildCard);
+    public Locations atWildCardLocation(String wildCard) throws Exception {
+        return executeQuery(new WildCardQuery(this, wildCard));
     }
 
     @Override

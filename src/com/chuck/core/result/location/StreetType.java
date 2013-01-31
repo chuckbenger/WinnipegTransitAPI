@@ -1,8 +1,7 @@
-package com.chuck.core.filter;
+package com.chuck.core.result.location;
 
-import com.chuck.service.APIMode;
-import com.chuck.service.TransitService;
-import org.apache.http.client.methods.HttpGet;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,18 +20,26 @@ import org.apache.http.client.methods.HttpGet;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+ * <p/>
+ * User: chuck
+ * Date: 31/01/13
+ * Time: 12:58 PM
  */
-public abstract class Query {
 
-    protected TransitService transitService;
-    protected final String BASE_REQUEST_URL = "api.winnipegtransit.com/";
-    protected final String BASE_REQUEST_URL_WITH_PROTOCOL = "http://" + BASE_REQUEST_URL;
+@Element(name = "type", type = String.class)
+public class StreetType {
 
-    protected Query(TransitService transitService) {
-        this.transitService = transitService;
+    @Attribute
+    private String abbr;
+
+    public String getAbbr() {
+        return abbr;
     }
 
-    public abstract void setAPIKey(String apiKey);
-
-    public abstract HttpGet buildQuery(APIMode apiMode);
+    @Override
+    public String toString() {
+        return "StreetType{" +
+                "abbr='" + abbr + '\'' +
+                '}';
+    }
 }

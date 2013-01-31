@@ -1,7 +1,7 @@
 package com.chuck.core.filter;
 
 import com.chuck.service.APIMode;
-import com.chuck.service.Service;
+import com.chuck.service.TransitService;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
@@ -34,11 +34,12 @@ public class FilterQuery extends Query {
     private ArrayList<NameValuePair> parameters = new ArrayList<NameValuePair>();
 
     /**
-     * Creates a new filter query for the input service
-     * @param service The service this query will be used on
+     * Creates a new filter query for the input transitService
+     *
+     * @param transitService The transitService this query will be used on
      */
-    public FilterQuery(Service service) {
-        super(service);
+    public FilterQuery(TransitService transitService) {
+        super(transitService);
     }
 
     /**
@@ -53,6 +54,7 @@ public class FilterQuery extends Query {
 
     /**
      * Sets the api key to use for the query
+     *
      * @param apiKey the api key
      */
     @Override
@@ -61,7 +63,7 @@ public class FilterQuery extends Query {
     }
 
     /**
-     * Builds a http get for the service specified
+     * Builds a http get for the transitService specified
      *
      * @return returns the  HTTP get
      */
@@ -71,7 +73,7 @@ public class FilterQuery extends Query {
 
         builder.setScheme("http");
         builder.setHost(BASE_REQUEST_URL);
-        builder.setPath(service.getServiceName(apiMode));
+        builder.setPath(transitService.getServiceName(apiMode));
         builder.setQuery(URLEncodedUtils.format(parameters, "UTF-8"));
         HttpGet get = null;
 

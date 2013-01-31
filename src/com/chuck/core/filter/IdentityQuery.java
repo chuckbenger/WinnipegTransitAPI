@@ -1,7 +1,7 @@
 package com.chuck.core.filter;
 
 import com.chuck.service.APIMode;
-import com.chuck.service.Service;
+import com.chuck.service.TransitService;
 import org.apache.http.client.methods.HttpGet;
 
 /**
@@ -28,11 +28,12 @@ public class IdentityQuery extends Query {
     private String identity;
 
     /**
-     * Creates a new Identity Query query for the input service
-     * @param service The service this query will be used on
+     * Creates a new Identity Query query for the input transitService
+     *
+     * @param transitService The transitService this query will be used on
      */
-    public IdentityQuery(Service service, String identity) {
-        super(service);
+    public IdentityQuery(TransitService transitService, String identity) {
+        super(transitService);
         this.identity = identity;
     }
 

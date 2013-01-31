@@ -3,6 +3,7 @@ package com.chuck.core;
 import com.chuck.core.exceptions.ServiceNotFound;
 import com.chuck.core.filter.Query;
 import com.chuck.service.APIMode;
+import com.chuck.service.TransitService;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -35,20 +36,12 @@ import java.io.InputStreamReader;
  */
 public class WinnipegTransitRequest {
 
-    private String apiKey;
     private final HttpClient httpClient = new DefaultHttpClient();
 
-    /**
-     * Creates and sets the API Key to be used for transit requests
-     *
-     * @param apiKey the apiKey to use
-     */
-    public WinnipegTransitRequest(String apiKey) {
-        this.apiKey = apiKey;
-    }
 
     /**
      * Sends a request to the server requesting json
+     *
      * @param query the query to send
      * @return returns a JSON object
      * @throws Exception
@@ -59,6 +52,7 @@ public class WinnipegTransitRequest {
 
     /**
      * Sends a request to the server requestion xml
+     *
      * @param query the query to send
      * @return returns a xml string
      * @throws Exception
@@ -71,21 +65,21 @@ public class WinnipegTransitRequest {
      * Sends a request to the server and returns the result
      *
      * @param query the query to execute
-     * @throws Exception exception occurred during request
      * @return returns the query result
+     * @throws Exception exception occurred during request
      */
     private String sendRequest(Query query, APIMode apiMode) throws Exception {
 
         String queryResult = null;
 
         try {
-            query.setAPIKey(apiKey);
+            query.setAPIKey(TransitService.getApiKey());
             HttpGet httpGet = query.buildQuery(apiMode);
             HttpResponse response = httpClient.execute(httpGet);
             String result = parseResponse(response).trim();
 
-            if(!validResult(result))
-                throw new ServiceNotFound(httpGet.getURI().toString() + " service was not found");
+            if (!validResult(result))
+                throw new ServiceNotFound(httpGet.getURI().toString() + " transitService was not found");
 
             queryResult = result;
 
@@ -98,12 +92,13 @@ public class WinnipegTransitRequest {
 
     /**
      * Check if the data returned started with an xml or json tag. If it
-     * doesn't then assume an error occurred or the service wasn't found
+     * doesn't then assume an error occurred or the transitService wasn't found
+     *
      * @param result The query result
      * @return returns true if valid else false
      */
     private static boolean validResult(String result) {
-       return result.startsWith("{") || result.startsWith("<");
+        return result.startsWith("{") || result.startsWith("<");
     }
 
     /**

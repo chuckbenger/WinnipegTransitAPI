@@ -1,7 +1,7 @@
 package com.chuck.core.filter;
 
 import com.chuck.service.APIMode;
-import com.chuck.service.Service;
+import com.chuck.service.TransitService;
 import org.apache.http.client.methods.HttpGet;
 
 /**
@@ -28,12 +28,11 @@ public class WildCardQuery extends Query {
     private String apiKey;
 
     /**
-     *
-     * @param service the service to call
-     * @param wildCard the wild card to filter with
+     * @param transitService the transitService to call
+     * @param wildCard       the wild card to filter with
      */
-    public WildCardQuery(Service service, String wildCard) {
-        super(service);
+    public WildCardQuery(TransitService transitService, String wildCard) {
+        super(transitService);
         this.wildCard = wildCard;
     }
 
@@ -44,11 +43,12 @@ public class WildCardQuery extends Query {
 
     /**
      * Builds a query using the set wildCard
+     *
      * @return a new http get method using the wild card filter
      */
     @Override
     public HttpGet buildQuery(APIMode apiMode) {
-        String url = BASE_REQUEST_URL_WITH_PROTOCOL + service.getServiceName(apiMode) + ":" + wildCard + "?api-key=" + apiKey;
+        String url = BASE_REQUEST_URL_WITH_PROTOCOL + transitService.getServiceName(apiMode) + ":" + wildCard + "?api-key=" + apiKey;
         return new HttpGet(url);
     }
 }

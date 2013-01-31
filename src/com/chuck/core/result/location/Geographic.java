@@ -1,4 +1,7 @@
-package com.chuck.service;
+package com.chuck.core.result.location;
+
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -17,13 +20,56 @@ package com.chuck.service;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+ * <p/>
+ * User: chuck
+ * Date: 31/01/13
+ * Time: 1:02 PM
  */
-public interface Service {
 
+@Root
+public class Geographic {
 
-    /**
-     * Gets the api service name set by the implementing class.
-     * @return returns the api service name
-     */
-    public abstract String getServiceName(APIMode apiMode);
+    @Element
+    private double latitude;
+
+    @Element
+    private double longitude;
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    @Override
+    public String toString() {
+        return "Geographic{" +
+                "latitude=" + latitude +
+                ", longitude=" + longitude +
+                '}';
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
