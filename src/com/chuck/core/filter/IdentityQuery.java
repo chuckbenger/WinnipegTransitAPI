@@ -1,4 +1,8 @@
-package com.chuck.service;
+package com.chuck.core.filter;
+
+import com.chuck.service.APIMode;
+import com.chuck.service.Service;
+import org.apache.http.client.methods.HttpGet;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -18,12 +22,28 @@ package com.chuck.service;
  * specific language governing permissions and limitations
  * under the License.
  */
-public interface Service {
+public class IdentityQuery extends Query {
 
+    private String apiKey;
+    private String identity;
 
     /**
-     * Gets the api service name set by the implementing class.
-     * @return returns the api service name
+     * Creates a new Identity Query query for the input service
+     * @param service The service this query will be used on
      */
-    public abstract String getServiceName(APIMode apiMode);
+    public IdentityQuery(Service service, String identity) {
+        super(service);
+        this.identity = identity;
+    }
+
+    @Override
+    public void setAPIKey(String apiKey) {
+        this.apiKey = apiKey;
+    }
+
+    @Override
+    public HttpGet buildQuery(APIMode apiMode) {
+        String url = BASE_REQUEST_URL_WITH_PROTOCOL + identity + "?api-key=" + apiKey;
+        return new HttpGet(url);
+    }
 }

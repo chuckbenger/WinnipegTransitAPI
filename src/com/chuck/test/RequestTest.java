@@ -3,7 +3,7 @@ package com.chuck.test;
 import com.chuck.core.WinnipegTransitRequest;
 import com.chuck.core.exceptions.ServiceNotFound;
 import com.chuck.core.filter.Query;
-import com.chuck.core.result.Result;
+import com.chuck.service.APIMode;
 import com.chuck.service.Service;
 import org.apache.http.client.methods.HttpGet;
 import org.junit.Test;
@@ -37,7 +37,7 @@ public class RequestTest {
     @Test (expected = RuntimeException.class)
     public void nullQueryObjectShouldReturnNullAndThrowException() throws Exception {
         WinnipegTransitRequest request = new WinnipegTransitRequest("");
-        Result resp = request.sendRequest(null);
+        String resp = request.sendXMLRequest(null);
         assertTrue("Null query object should return null",resp == null);
     }
 
@@ -47,12 +47,12 @@ public class RequestTest {
 
         final Service s = new Service() {
             @Override
-            public String getServiceName() {
+            public String getServiceName(APIMode apiMode) {
                 return "Invalid_service";
             }
         };
 
-        Result resp = request.sendRequest(new Query(s) {
+        String resp = request.sendXMLRequest(new Query(s) {
             String apiKey;
             @Override
             public void setAPIKey(String apiKey) {
@@ -60,8 +60,8 @@ public class RequestTest {
             }
 
             @Override
-            public HttpGet buildQuery() {
-                return new HttpGet(BASE_REQUEST_URL_WITH_PROTOCOL + s.getServiceName() + "?api-key=" + apiKey);
+            public HttpGet buildQuery(APIMode apiMode) {
+                return new HttpGet(BASE_REQUEST_URL_WITH_PROTOCOL + s.getServiceName(apiMode) + "?api-key=" + apiKey);
             }
         });
 

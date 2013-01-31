@@ -1,4 +1,6 @@
-package com.chuck.core.result;
+package com.chuck.service;
+
+import com.chuck.core.filter.FilterQuery;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -18,5 +20,28 @@ package com.chuck.core.result;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class Result {
+public class Status implements Service {
+
+    private static final Status INSTANCE = new Status();
+
+    /**
+     * Returns an pre-created instance of Status
+     * @return returns a Status object
+     */
+    public static Status getInstance() {
+        return INSTANCE;
+    }
+
+    /**
+     * Builds a request that gets the current transit status
+     * @return returns the new status
+     */
+    public FilterQuery getTransitStatus() {
+        return new FilterQuery(this);
+    }
+
+    @Override
+    public String getServiceName(APIMode apiMode) {
+        return "statuses" + (apiMode == APIMode.JSON ? ".json" : "");
+    }
 }

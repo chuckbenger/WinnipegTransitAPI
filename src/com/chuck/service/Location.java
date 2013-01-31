@@ -21,7 +21,7 @@ import com.chuck.core.filter.WildCardQuery;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class Location extends Service {
+public class Location implements Service {
 
     private static final Location INSTANCE = new Location();
 
@@ -81,7 +81,7 @@ public class Location extends Service {
     }
 
     @Override
-    public String getServiceName() {
+    public String getServiceName(APIMode apiMode) {
         return "locations" + (apiMode == APIMode.JSON ? ".json" : "");
     }
 }

@@ -1,5 +1,6 @@
 package com.chuck.core.filter;
 
+import com.chuck.service.APIMode;
 import com.chuck.service.Service;
 import org.apache.http.client.methods.HttpGet;
 
@@ -46,8 +47,8 @@ public class WildCardQuery extends Query {
      * @return a new http get method using the wild card filter
      */
     @Override
-    public HttpGet buildQuery() {
-        String url = BASE_REQUEST_URL_WITH_PROTOCOL + service.getServiceName() + ":" + wildCard + "?api-key=" + apiKey;
+    public HttpGet buildQuery(APIMode apiMode) {
+        String url = BASE_REQUEST_URL_WITH_PROTOCOL + service.getServiceName(apiMode) + ":" + wildCard + "?api-key=" + apiKey;
         return new HttpGet(url);
     }
 }

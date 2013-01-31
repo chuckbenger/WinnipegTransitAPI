@@ -8,7 +8,8 @@ The API is pretty simple just create and instance of WinnipegTransitRequest clas
 	//Pull locations around a geographic coordinate within 100 meters with a limit of 10
 	WinnipegTransitRequest winnipegTransitRequest = new WinnipegTransitRequest("my api key");
     Location location = Location.getInstance();
-    winnipegTransitRequest.sendRequest(location.atGeographicCoordinate(49.895, 97.138, 100, 10));
+    winnipegTransitRequest.sendXMLRequest(location.atGeographicCoordinate(49.895, 97.138, 100, 10));  //Returns the xml string
+    winnipegTransitRequest.sendJSONRequest(location.atGeographicCoordinate(49.895, 97.138, 100, 10)); //Returns a JSON object
 
     //Result data defaults to xml to get json simply go
     Service.setAPIMode(APIMode.JSON);
