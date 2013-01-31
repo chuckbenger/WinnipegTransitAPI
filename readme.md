@@ -19,4 +19,3 @@ The following libraries are required to use WinnipegTransitAPI. Android has thes
 * httpclient-4.2.3.jar
 * httpcore-4.2.2.jar
 * json-java.jar
-* This file was modified by IntelliJ IDEA 12.0.2 for binding GitHub repository

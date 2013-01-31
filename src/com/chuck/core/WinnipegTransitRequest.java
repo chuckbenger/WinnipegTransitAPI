@@ -1,5 +1,6 @@
 package com.chuck.core;
 
+import com.chuck.core.exceptions.ServiceNotFound;
 import com.chuck.core.filter.Query;
 import com.chuck.core.result.Result;
 import org.apache.http.HttpEntity;
@@ -49,9 +50,10 @@ public class WinnipegTransitRequest {
      * Sends a request to the server and returns the result
      *
      * @param query the query to execute
-     * @return returns the query result or null if exception occured
+     * @throws Exception exception occurred during request
+     * @return returns the query result
      */
-    public Result sendRequest(Query query) {
+    public Result sendRequest(Query query) throws Exception {
 
         Result queryResult = null;
 
@@ -59,12 +61,28 @@ public class WinnipegTransitRequest {
             query.setAPIKey(apiKey);
             HttpGet httpGet = query.buildQuery();
             HttpResponse response = httpClient.execute(httpGet);
-            queryResult = parseResponse(response);
+            String result = parseResponse(response).trim();
+
+            if(validResult(result))
+                throw new ServiceNotFound(httpGet.getURI().toString() + " service was not found");
+
+            System.out.println(result);
+
         } catch (Exception e) {
-            e.printStackTrace();
+            throw e;
         }
 
         return queryResult;
+    }
+
+    /**
+     * Check if the data returned started with an xml or json tag. If it
+     * doesn't then assume an error occurred or the service wasn't found
+     * @param result The query result
+     * @return returns true if valid else false
+     */
+    private static boolean validResult(String result) {
+       return !result.startsWith("{") && !result.startsWith("<");
     }
 
     /**
@@ -74,11 +92,11 @@ public class WinnipegTransitRequest {
      * @return returns the result
      * @throws IOException
      */
-    private static Result parseResponse(HttpResponse response) throws IOException {
+    private static String parseResponse(HttpResponse response) throws IOException {
 
         HttpEntity entity = response.getEntity();
-        System.out.println(convertStreamToString(entity.getContent()));
-        return null;
+        String result = convertStreamToString(entity.getContent());
+        return result;
     }
 
     /**
