@@ -114,7 +114,7 @@ public class WinnipegTransitRequest {
         String line;
         try {
             while ((line = reader.readLine()) != null) {
-                xml += line;
+                xml += line + "\n";
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -1,7 +1,10 @@
-package com.chuck.service;
+package com.chuck.core.result.stops;
 
-import com.chuck.core.filter.FilterQuery;
-import com.chuck.core.result.status.Status;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Root;
+
+import java.util.List;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,35 +24,63 @@ import com.chuck.core.result.status.Status;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class StatusService extends TransitService {
 
-    private static StatusService INSTANCE;
+@Root(name = "stops")
+public class Stop {
 
-    /**
-     * Returns an instance of StatusService
-     *
-     * @return returns a StatusService object
-     */
-    public static StatusService getInstance() {
+    @Attribute
+    private String base;
 
-        if (INSTANCE == null)
-            INSTANCE = new StatusService();
+    @Attribute(name = "query-time")
+    private String queryTime;
 
-        return INSTANCE;
+    @ElementList(inline = true, required = false)
+    private List<StopNode> stop;
+
+    public String getBase() {
+        return base;
     }
 
-    /**
-     * Builds a request and gets the current transit status
-     *
-     * @return returns the status of the transit service
-     */
-    public Status getTransitStatus() throws Exception {
-        FilterQuery filterQuery = new FilterQuery(this);
-        return executeQuery(filterQuery, Status.class);
+    public String getQueryTime() {
+        return queryTime;
+    }
+
+    public List<StopNode> getStop() {
+        return stop;
     }
 
     @Override
-    public String getServiceName() {
-        return "statuses";
+    public String toString() {
+        return "Stop{" +
+                "base='" + base + '\'' +
+                ", queryTime='" + queryTime + '\'' +
+                ", stop=" + stop +
+                '}';
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

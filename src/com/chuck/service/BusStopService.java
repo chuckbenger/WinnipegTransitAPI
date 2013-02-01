@@ -1,8 +1,7 @@
 package com.chuck.service;
 
 import com.chuck.core.filter.FilterQuery;
-import com.chuck.core.filter.WildCardQuery;
-import com.chuck.core.result.location.Locations;
+import com.chuck.core.result.stops.Stop;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,33 +21,34 @@ import com.chuck.core.result.location.Locations;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class LocationService extends TransitService {
+public class BusStopService extends TransitService {
 
-    private static LocationService INSTANCE;
+    private static BusStopService INSTANCE;
 
     /**
-     * Returns an instance of LocationService.
+     * Returns an instance of BusStopService.
      *
-     * @return returns a LocationService object
+     * @return returns a BusStopService object
      */
-    public static LocationService getInstance() {
+    public static BusStopService getInstance() {
 
         if (INSTANCE == null)
-            INSTANCE = new LocationService();
+            INSTANCE = new BusStopService();
 
         return INSTANCE;
     }
 
     /**
-     * Creates a new filter query returning locations around the UTM x, y coordinate
+     * Creates a new filter query to locate stops around a coordinate
      *
      * @param x          the Utm x coordinate
      * @param y          the Utm y coordinate
      * @param distance   the distance in meters from the coordinates
      * @param maxResults the maximum number of results
+     * @param walking    Whether you want walking distance to be calculated
      * @return returns a new query object
      */
-    public Locations atUTMCoordinate(int x, int y, int distance, int maxResults) throws Exception {
+    public Stop atUTMCoordinate(int x, int y, int distance, int maxResults, boolean walking) throws Exception {
         FilterQuery query = new FilterQuery(this);
 
         query.addParameter("x", x);
@@ -56,19 +56,23 @@ public class LocationService extends TransitService {
         query.addParameter("distance", distance);
         query.addParameter("max-results", maxResults);
 
-        return executeQuery(query, Locations.class);
+        if (walking)
+            query.addParameter("walking", true);
+
+        return executeQuery(query, Stop.class);
     }
 
     /**
-     * Creates a new filter query returns the locations around the Geographic coordinates
+     * Creates a new filter query to locate stops around a coordinate
      *
      * @param latitude   The latitude to find locations around
      * @param longitude  The longitude to find locations around
      * @param distance   the distance in meters from the coordinates
      * @param maxResults the maximum number of results
+     * @param walking    Whether you want walking distance to be calculated
      * @return returns a new query object
      */
-    public Locations atGeographicCoordinate(double latitude, double longitude, int distance, int maxResults) throws Exception {
+    public Stop atGeographicCoordinate(double latitude, double longitude, int distance, int maxResults, boolean walking) throws Exception {
         FilterQuery query = new FilterQuery(this);
 
         query.addParameter("lat", latitude);
@@ -76,37 +80,14 @@ public class LocationService extends TransitService {
         query.addParameter("distance", distance);
         query.addParameter("max-results", maxResults);
 
-        return executeQuery(query, Locations.class);
-    }
+        if (walking)
+            query.addParameter("walking", true);
 
-    /**
-     * Creates new wild card query
-     *
-     * @param wildCard the filter
-     * @return returns a new wild card query
-     */
-    public Locations atWildCardLocation(String wildCard) throws Exception {
-        return executeQuery(new WildCardQuery(this, wildCard), Locations.class);
+        return executeQuery(query, Stop.class);
     }
 
     @Override
     public String getServiceName() {
-        return "locations";
+        return "stops";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

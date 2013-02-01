@@ -1,7 +1,6 @@
-package com.chuck.service;
+package com.chuck.core.result.stops;
 
-import com.chuck.core.filter.FilterQuery;
-import com.chuck.core.result.status.Status;
+import org.simpleframework.xml.Element;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,35 +20,28 @@ import com.chuck.core.result.status.Status;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class StatusService extends TransitService {
+@Element
+public class Distance {
 
-    private static StatusService INSTANCE;
+    @Element(name = "direct")
+    private Measurement direct;
 
-    /**
-     * Returns an instance of StatusService
-     *
-     * @return returns a StatusService object
-     */
-    public static StatusService getInstance() {
+    @Element(name = "walking")
+    private Measurement walking;
 
-        if (INSTANCE == null)
-            INSTANCE = new StatusService();
-
-        return INSTANCE;
+    public Measurement getDirect() {
+        return direct;
     }
 
-    /**
-     * Builds a request and gets the current transit status
-     *
-     * @return returns the status of the transit service
-     */
-    public Status getTransitStatus() throws Exception {
-        FilterQuery filterQuery = new FilterQuery(this);
-        return executeQuery(filterQuery, Status.class);
+    public Measurement getWalking() {
+        return walking;
     }
 
     @Override
-    public String getServiceName() {
-        return "statuses";
+    public String toString() {
+        return "Distance{" +
+                "direct=" + direct +
+                ", walking=" + walking +
+                '}';
     }
 }

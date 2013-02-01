@@ -1,6 +1,9 @@
 package com.chuck.service;
 
 import com.chuck.core.WinnipegTransitRequest;
+import com.chuck.core.filter.Query;
+import org.simpleframework.xml.Serializer;
+import org.simpleframework.xml.core.Persister;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -37,6 +40,14 @@ public abstract class TransitService {
     }
 
     /**
+     * Initializes the requester and serializer
+     */
+    protected TransitService() {
+        this.requester = new WinnipegTransitRequest();
+        this.serializer = new Persister();
+    }
+
+    /**
      * Sets the api key
      *
      * @param apiKey
@@ -50,6 +61,10 @@ public abstract class TransitService {
      */
     protected WinnipegTransitRequest requester;
 
+    /**
+     * Used for converting xml to a java object
+     */
+    protected Serializer serializer;
 
     /**
      * Gets the api transitService name set by the implementing class.
@@ -57,4 +72,20 @@ public abstract class TransitService {
      * @return returns the api transitService name
      */
     public abstract String getServiceName();
+
+
+    /**
+     * Executes the input query and returns a Locations instance
+     *
+     * @param query        the query to execute
+     * @param parsedObject the class the parser will use to convert the xml to
+     * @param <T>          The type of the passed in class
+     * @return returns the Locations instance
+     * @throws Exception
+     */
+    protected <T> T executeQuery(Query query, Class<T> parsedObject) throws Exception {
+
+        String xml = requester.sendXMLRequest(query);
+        return serializer.read(parsedObject, xml);
+    }
 }

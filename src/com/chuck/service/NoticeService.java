@@ -1,10 +1,7 @@
 package com.chuck.service;
 
-import com.chuck.core.WinnipegTransitRequest;
 import com.chuck.core.filter.FilterQuery;
 import com.chuck.core.result.message.SystemMessage;
-import org.simpleframework.xml.Serializer;
-import org.simpleframework.xml.core.Persister;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -27,12 +24,6 @@ import org.simpleframework.xml.core.Persister;
 public class NoticeService extends TransitService {
 
     private static NoticeService INSTANCE;
-    private final Serializer serializer;
-
-    public NoticeService() {
-        requester = new WinnipegTransitRequest();
-        serializer = new Persister();
-    }
 
     /**
      * Returns an instance of NoticeService
@@ -55,9 +46,7 @@ public class NoticeService extends TransitService {
      */
     public SystemMessage getSystemMessages() throws Exception {
         FilterQuery filterQuery = new FilterQuery(this);
-        String xml = requester.sendXMLRequest(filterQuery);
-
-        return serializer.read(SystemMessage.class, xml);
+        return executeQuery(filterQuery, SystemMessage.class);
     }
 
     @Override

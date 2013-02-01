@@ -1,5 +1,7 @@
-package com.chuck.core.result.location;
+package com.chuck.core.result.stops;
 
+import com.chuck.core.result.location.Centre;
+import com.chuck.core.result.location.Street;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
@@ -21,14 +23,10 @@ import org.simpleframework.xml.Root;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * <p/>
- * User: chuck
- * Date: 31/01/13
- * Time: 12:56 PM
  */
 
-@Root
-public class Street {
+@Root(name = "stop")
+public class StopNode {
 
     @Attribute
     private String href;
@@ -39,11 +37,26 @@ public class Street {
     @Element
     private String name;
 
-    @Element(required = false)
-    private String leg;
+    @Element
+    private int number;
 
     @Element
-    private StreetType type;
+    private Direction direction;
+
+    @Element
+    private Side side;
+
+    @Element
+    private Street street;
+
+    @Element(name = "cross-street")
+    private Street crossStreet;
+
+    @Element
+    private Centre centre;
+
+    @Element
+    private Distance distances;
 
     public String getHref() {
         return href;
@@ -57,20 +70,63 @@ public class Street {
         return name;
     }
 
-    public StreetType getType() {
-        return type;
+    public int getNumber() {
+        return number;
+    }
+
+    public Direction getDirection() {
+        return direction;
+    }
+
+    public Side getSide() {
+        return side;
+    }
+
+    public Street getStreet() {
+        return street;
+    }
+
+    public Street getCrossStreet() {
+        return crossStreet;
+    }
+
+    public Centre getCentre() {
+        return centre;
+    }
+
+    public Distance getDistances() {
+        return distances;
     }
 
     @Override
     public String toString() {
-        return "Street{" +
+        return "StopNode{" +
                 "href='" + href + '\'' +
-                ", key=" + key +
-                ", name='" + name + '\'' +
-                ", type=" + type +
+                ", \nkey='" + key + '\'' +
+                ", \nname='" + name + '\'' +
+                ", \nnumber=" + number +
+                ", \ndirection=" + direction +
+                ", side=" + side +
+                ", street=" + street +
+                ", crossStreet=" + crossStreet +
+                ", centre=" + centre +
+                ", distance=" + distances +
                 '}';
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

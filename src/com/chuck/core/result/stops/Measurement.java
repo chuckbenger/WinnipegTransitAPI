@@ -1,8 +1,7 @@
-package com.chuck.core.result.location;
+package com.chuck.core.result.stops;
 
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,65 +20,14 @@ import org.simpleframework.xml.Root;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * <p/>
- * User: chuck
- * Date: 31/01/13
- * Time: 12:56 PM
  */
+@Element(type = Double.class)
+public class Measurement {
 
-@Root
-public class Street {
+    public String getUnit() {
+        return unit;
+    }
 
     @Attribute
-    private String href;
-
-    @Element
-    private String key;
-
-    @Element
-    private String name;
-
-    @Element(required = false)
-    private String leg;
-
-    @Element
-    private StreetType type;
-
-    public String getHref() {
-        return href;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public StreetType getType() {
-        return type;
-    }
-
-    @Override
-    public String toString() {
-        return "Street{" +
-                "href='" + href + '\'' +
-                ", key=" + key +
-                ", name='" + name + '\'' +
-                ", type=" + type +
-                '}';
-    }
+    private String unit;
 }
-
-
-
-
-
-
-
-
-
-
-
-
