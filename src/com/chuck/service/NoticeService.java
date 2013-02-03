@@ -3,6 +3,9 @@ package com.chuck.service;
 import com.chuck.core.filter.FilterQuery;
 import com.chuck.core.result.message.SystemMessage;
 
+import java.io.InputStream;
+import java.net.URI;
+
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -44,9 +47,15 @@ public class NoticeService extends TransitService {
      * @return returns a System Message object which contains any messages
      * @throws Exception
      */
-    public SystemMessage getSystemMessages() throws Exception {
+    public URI getSystemMessages() throws Exception {
         FilterQuery filterQuery = new FilterQuery(this);
-        return executeQuery(filterQuery, SystemMessage.class);
+        return filterQuery.buildQuery();
+    }
+
+
+    @Override
+    public SystemMessage convertStreamToObject(InputStream inputStream) throws Exception {
+        return super.convertStreamToObject(SystemMessage.class, inputStream);
     }
 
     @Override

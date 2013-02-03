@@ -1,7 +1,9 @@
 package com.chuck.core.filter;
 
 import com.chuck.service.TransitService;
-import org.apache.http.client.methods.HttpGet;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -31,7 +33,5 @@ public abstract class Query {
         this.transitService = transitService;
     }
 
-    public abstract void setAPIKey(String apiKey);
-
-    public abstract HttpGet buildQuery();
+    public abstract URI buildQuery() throws URISyntaxException;
 }

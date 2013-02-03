@@ -1,7 +1,9 @@
 package com.chuck.core.filter;
 
 import com.chuck.service.TransitService;
-import org.apache.http.client.methods.HttpGet;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -35,19 +37,13 @@ public class WildCardQuery extends Query {
         this.wildCard = wildCard;
     }
 
-    @Override
-    public void setAPIKey(String apiKey) {
-        this.apiKey = apiKey;
-    }
-
     /**
      * Builds a query using the set wildCard
      *
      * @return a new http get method using the wild card filter
      */
     @Override
-    public HttpGet buildQuery() {
-        String url = BASE_REQUEST_URL_WITH_PROTOCOL + transitService.getServiceName() + ":" + wildCard + "?api-key=" + apiKey;
-        return new HttpGet(url);
+    public URI buildQuery() throws URISyntaxException {
+        return new URI(BASE_REQUEST_URL_WITH_PROTOCOL + transitService.getServiceName() + ":" + wildCard + "?" + TransitService.getApiKeyParam());
     }
 }

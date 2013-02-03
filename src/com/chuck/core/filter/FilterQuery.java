@@ -2,11 +2,11 @@ package com.chuck.core.filter;
 
 import com.chuck.service.TransitService;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.client.utils.URIUtils;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 
@@ -52,37 +52,14 @@ public class FilterQuery extends Query {
     }
 
     /**
-     * Sets the api key to use for the query
-     *
-     * @param apiKey the api key
-     */
-    @Override
-    public void setAPIKey(String apiKey) {
-        addParameter("api-key", apiKey);
-    }
-
-    /**
      * Builds a http get for the transitService specified
      *
      * @return returns the  HTTP get
      */
     @Override
-    public HttpGet buildQuery() {
-        URIBuilder builder = new URIBuilder();
-
-        builder.setScheme("http");
-        builder.setHost(BASE_REQUEST_URL);
-        builder.setPath(transitService.getServiceName());
-        builder.setQuery(URLEncodedUtils.format(parameters, "UTF-8"));
-        HttpGet get = null;
-
-        try {
-            get = new HttpGet(builder.build());
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-
-        return get;
+    public URI buildQuery() throws URISyntaxException {
+        addParameter("api-key", TransitService.getApiKey());
+        return URIUtils.createURI("http", BASE_REQUEST_URL, 0, transitService.getServiceName(), URLEncodedUtils.format(parameters, "UTF-8"), null);
     }
 }
 

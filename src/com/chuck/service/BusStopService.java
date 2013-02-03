@@ -3,6 +3,9 @@ package com.chuck.service;
 import com.chuck.core.filter.FilterQuery;
 import com.chuck.core.result.stops.Stop;
 
+import java.io.InputStream;
+import java.net.URI;
+
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -48,7 +51,7 @@ public class BusStopService extends TransitService {
      * @param walking    Whether you want walking distance to be calculated
      * @return returns a new query object
      */
-    public Stop atUTMCoordinate(int x, int y, int distance, int maxResults, boolean walking) throws Exception {
+    public URI atUTMCoordinate(int x, int y, int distance, int maxResults, boolean walking) throws Exception {
         FilterQuery query = new FilterQuery(this);
 
         query.addParameter("x", x);
@@ -59,7 +62,7 @@ public class BusStopService extends TransitService {
         if (walking)
             query.addParameter("walking", true);
 
-        return executeQuery(query, Stop.class);
+        return query.buildQuery();
     }
 
     /**
@@ -72,7 +75,7 @@ public class BusStopService extends TransitService {
      * @param walking    Whether you want walking distance to be calculated
      * @return returns a new query object
      */
-    public Stop atGeographicCoordinate(double latitude, double longitude, int distance, int maxResults, boolean walking) throws Exception {
+    public URI atGeographicCoordinate(double latitude, double longitude, int distance, int maxResults, boolean walking) throws Exception {
         FilterQuery query = new FilterQuery(this);
 
         query.addParameter("lat", latitude);
@@ -83,11 +86,16 @@ public class BusStopService extends TransitService {
         if (walking)
             query.addParameter("walking", true);
 
-        return executeQuery(query, Stop.class);
+        return query.buildQuery();
     }
 
     @Override
     public String getServiceName() {
         return "stops";
+    }
+
+    @Override
+    public Stop convertStreamToObject(InputStream inputStream) throws Exception {
+        return super.convertStreamToObject(Stop.class, inputStream);
     }
 }

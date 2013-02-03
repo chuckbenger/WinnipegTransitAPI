@@ -4,6 +4,9 @@ import com.chuck.core.filter.FilterQuery;
 import com.chuck.core.filter.WildCardQuery;
 import com.chuck.core.result.location.Locations;
 
+import java.io.InputStream;
+import java.net.URI;
+
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -48,7 +51,7 @@ public class LocationService extends TransitService {
      * @param maxResults the maximum number of results
      * @return returns a new query object
      */
-    public Locations atUTMCoordinate(int x, int y, int distance, int maxResults) throws Exception {
+    public URI atUTMCoordinate(int x, int y, int distance, int maxResults) throws Exception {
         FilterQuery query = new FilterQuery(this);
 
         query.addParameter("x", x);
@@ -56,7 +59,7 @@ public class LocationService extends TransitService {
         query.addParameter("distance", distance);
         query.addParameter("max-results", maxResults);
 
-        return executeQuery(query, Locations.class);
+        return query.buildQuery();
     }
 
     /**
@@ -68,7 +71,7 @@ public class LocationService extends TransitService {
      * @param maxResults the maximum number of results
      * @return returns a new query object
      */
-    public Locations atGeographicCoordinate(double latitude, double longitude, int distance, int maxResults) throws Exception {
+    public URI atGeographicCoordinate(double latitude, double longitude, int distance, int maxResults) throws Exception {
         FilterQuery query = new FilterQuery(this);
 
         query.addParameter("lat", latitude);
@@ -76,7 +79,7 @@ public class LocationService extends TransitService {
         query.addParameter("distance", distance);
         query.addParameter("max-results", maxResults);
 
-        return executeQuery(query, Locations.class);
+        return query.buildQuery();
     }
 
     /**
@@ -85,8 +88,14 @@ public class LocationService extends TransitService {
      * @param wildCard the filter
      * @return returns a new wild card query
      */
-    public Locations atWildCardLocation(String wildCard) throws Exception {
-        return executeQuery(new WildCardQuery(this, wildCard), Locations.class);
+    public URI atWildCardLocation(String wildCard) throws Exception {
+        return new WildCardQuery(this, wildCard).buildQuery();
+    }
+
+
+    @Override
+    public Locations convertStreamToObject(InputStream inputStream) throws Exception {
+        return super.convertStreamToObject(Locations.class, inputStream);
     }
 
     @Override

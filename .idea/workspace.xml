@@ -5,41 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f51a1c7-2595-4db7-904a-9f88be8322d4" name="Default" comment="Added XML conversions for locations request">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/service/BusStopService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/stops/Direction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/stops/Distance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/util/Helper.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/stops/Measurement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/stops/Side.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/stops/Stop.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/stops/StopNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/WinnipegTransitAPI_jar.xml" />
+      <change type="DELETED" beforePath="C:\Users\Charles\workspace\WinnipegTransitAPI\src\com\chuck\core\WinnipegTransitRequest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/BusStopService.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/BusStopService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/filter/IdentityQuery.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/IdentityQuery.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/LocationService.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/LocationService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/NoticeService.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/NoticeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/filter/Query.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/Query.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/StatusService.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/StatusService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/result/location/Street.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/location/Street.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WinnipegTransitAPI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/WinnipegTransitRequest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359674362734" ignored="false" />
+    <file path="/WinnipegTransitRequest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359683946985" ignored="false" />
     <file path="/Request.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359584887319" ignored="false" />
     <file path="/Query.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359604868377" ignored="false" />
-    <file path="/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359680656182" ignored="false" />
-    <file path="/fragment.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359678956709" ignored="false" />
-    <file path="/FilterQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359674481295" ignored="false" />
+    <file path="/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359922247025" ignored="false" />
+    <file path="/fragment.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359686285754" ignored="false" />
+    <file path="/FilterQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359920502176" ignored="false" />
     <file path="/Service.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359604821922" ignored="false" />
     <file path="/RequestTest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359605858415" ignored="false" />
     <file path="/Location.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359671330784" ignored="false" />
-    <file path="/WildCardQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359604962152" ignored="false" />
+    <file path="/WildCardQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359920773637" ignored="false" />
     <file path="/readme" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598576310" ignored="false" />
-    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359676881350" ignored="false" />
+    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359918616809" ignored="false" />
     <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359662060355" ignored="false" />
     <file path="/APIMode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599790196" ignored="false" />
     <file path="/ServiceNotFound.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600829882" ignored="false" />
     <file path="/Status.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359673754416" ignored="false" />
-    <file path="/IdentityQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359674488344" ignored="false" />
+    <file path="/IdentityQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359920759758" ignored="false" />
     <file path="/Result.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359603789489" ignored="false" />
     <file path="/LocationResult.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359660453451" ignored="false" />
     <file path="/Attributes.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359654600618" ignored="false" />
@@ -54,23 +53,53 @@
     <file path="/Geographic.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359659018638" ignored="false" />
     <file path="/Locations.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359659852832" ignored="false" />
     <file path="/Intersection.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359660336471" ignored="false" />
-    <file path="/TransitService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359679808758" ignored="false" />
-    <file path="/StatusService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359679472707" ignored="false" />
+    <file path="/TransitService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359921967301" ignored="false" />
+    <file path="/StatusService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359922156886" ignored="false" />
     <file path="/StatusNode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359672563771" ignored="false" />
     <file path="/a.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359672806367" ignored="false" />
     <file path="/sample.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359672811681" ignored="false" />
-    <file path="/NoticeService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359679500184" ignored="false" />
+    <file path="/NoticeService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359922115256" ignored="false" />
     <file path="/SystemMessage.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359673742953" ignored="false" />
     <file path="/MessageNode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359673482720" ignored="false" />
-    <file path="/LocationService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359679368136" ignored="false" />
+    <file path="/LocationService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359922138125" ignored="false" />
     <file path="/Stop.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359680025577" ignored="false" />
     <file path="/Direction.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359677373724" ignored="false" />
     <file path="/StopNode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359680047637" ignored="false" />
     <file path="/Side.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359677509540" ignored="false" />
     <file path="/Distance.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359680277669" ignored="false" />
-    <file path="/BusStopService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359679661623" ignored="false" />
+    <file path="/BusStopService.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359921972019" ignored="false" />
     <file path="/GenericElem.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359680178673" ignored="false" />
     <file path="/Measurement.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359680312028" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359681105745" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/AndroidManifest.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685798530" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/src/com/chuck/winnipegtransit/MainActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685520044" ignored="false" />
+    <file path="/MainActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359686113192" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/libs/WinnipegTransitAPI.jar!/com/chuck/service/BusStopService.class" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359683239399" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/libs/WinnipegTransitAPI.jar!/com/chuck/core/filter/Query.class" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359683239399" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/libs/WinnipegTransitAPI.jar!/com/chuck/core/filter/FilterQuery.class" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359683239399" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/libs/WinnipegTransitAPI.jar!/com/chuck/core/WinnipegTransitRequest.class" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359684032770" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/src/com/chuck/winnipegtransit/fragments/MapFragment.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685520044" ignored="false" />
+    <file path="/MapFragment.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685124434" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/res/layout/TransitMap.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359684470044" ignored="false" />
+    <file path="/TransitMap.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359684441919" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/res/layout/transit_view.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685057176" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/gen/com/chuck/winnipegtransit/Manifest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685800372" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/gen/com/chuck/winnipegtransit/R.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685800372" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/gen/com/chuck/winnipegtransit/BuildConfig.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685800372" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/src/com/chuck/winnipegtransit/MapActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685329047" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/src/MapActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359684975154" ignored="false" />
+    <file path="/transit_view.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685057176" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/res/layout/map_activity.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685272634" ignored="false" />
+    <file path="/MapActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685328405" ignored="false" />
+    <file path="$PROJECT_DIR$/../WinnipegTransit/src/com/chuck/winnipegtransit/TransitMapActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685596925" ignored="false" />
+    <file path="/TransitMapActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685588918" ignored="false" />
+    <file path="$PROJECT_DIR$/../TransitTest/res/layout/activity_main.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359685986337" ignored="false" />
+    <file path="$PROJECT_DIR$/../TransitTest/AndroidManifest.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359686082124" ignored="false" />
+    <file path="$PROJECT_DIR$/../TransitTest/src/com/chuck/transittest/MainActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359686120191" ignored="false" />
+    <file path="$PROJECT_DIR$/../BusTest/res/layout/activity_main.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359686260833" ignored="false" />
+    <file path="$PROJECT_DIR$/../BusTest/src/com/example/bustest/MainActivity.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359686281788" ignored="false" />
+    <file path="$PROJECT_DIR$/../BusTest/AndroidManifest.xml" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359686355980" ignored="false" />
+    <file path="/Helper.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359920412781" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +114,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -120,6 +148,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -132,7 +161,18 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="39" selection-start="803" selection-end="803" vertical-scroll-proportion="0.37041286">
+            <state line="28" column="90" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.6989721">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chuck/service/LocationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="1" selection-start="3293" selection-end="3474" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,21 +196,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/chuck/service/LocationService.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/service/StatusService.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/service/NoticeService.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/service/BusStopService.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/core/result/GenericElem.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/Measurment.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/Stop.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/StopNode.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/Side.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/Measurement.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/Distance.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/Direction.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/location/Street.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/core/util/Helper.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/core/filter/Query.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/core/filter/IdentityQuery.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/service/BusStopService.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/service/NoticeService.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/service/LocationService.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/service/StatusService.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/Main.java" />
       </list>
     </option>
@@ -244,7 +284,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,28 +322,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chuck" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WinnipegTransitAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WinnipegTransitAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chuck" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,10 +394,6 @@
               <option name="myItemId" value="result" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stops" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -403,55 +417,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WinnipegTransitAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WinnipegTransitAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chuck" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="location" />
+              <option name="myItemId" value="filter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="editor.preferences.smartKeys" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WinnipegTransit" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -729,7 +713,11 @@
       <created>1359674645107</created>
       <updated>1359674645107</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added XML conversions for stop locations around a specified coordinate">
+      <created>1359680744121</created>
+      <updated>1359680744121</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -738,30 +726,30 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739422" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628062" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296617" sideWeight="0.672" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17289221" sideWeight="0.6258352" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37416482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17235859" sideWeight="0.7873051" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21269488" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -802,7 +790,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read me update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added XML conversions for stop locations around a specified coordinate" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -823,6 +811,7 @@
     <MESSAGE value="Added XML conversions for status requests" />
     <MESSAGE value="Added XML conversions for system messages" />
     <MESSAGE value="Read me update" />
+    <MESSAGE value="Added XML conversions for stop locations around a specified coordinate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -832,23 +821,68 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/location/Locations.java">
+    <entry file="jar://$PROJECT_DIR$/lib/httpcore-4.2.2.jar!/org/apache/http/message/BasicNameValuePair.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.33295193">
+        <state line="18" column="28" selection-start="722" selection-end="722" vertical-scroll-proportion="-10.68" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/httpclient-4.2.3.jar!/org/apache/http/client/utils/URLEncodedUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="35" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.45808735" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/httpclient-4.2.3.jar!/org/apache/http/client/utils/URIUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="28" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.5897129" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_11/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="18" selection-start="971" selection-end="971" vertical-scroll-proportion="0.52517164">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/location/Address.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/util/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.15789473">
+        <state line="33" column="10" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.45412844">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/filter/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="5" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.5848624">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/StatusService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/filter/FilterQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="55" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.87528604">
+        <state line="52" column="0" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.39678898">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/filter/IdentityQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="105" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.7798165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/filter/WildCardQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="144" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.8245413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/TransitService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="58" selection-start="2570" selection-end="2570" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -857,106 +891,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/NoticeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="56" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.83867276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/LocationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1253" selection-end="1253" vertical-scroll-proportion="-0.12814645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/TransitService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/stops/Stop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="29" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.68097013">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/stops/StopNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="29" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.55597013">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/stops/Side.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.58768654">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/stops/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="29" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.7294776">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/stops/Distance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="36" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.55597013">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/stops/Direction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="29" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.5914179">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/WinnipegTransitRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="33" selection-start="3821" selection-end="3821" vertical-scroll-proportion="0.6492537">
+        <state line="58" column="56" selection-start="1928" selection-end="1928" vertical-scroll-proportion="0.5332569">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/BusStopService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="3166" selection-end="3166" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="101" column="12" selection-start="3371" selection-end="3538" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/location/Street.java">
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/StatusService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="29" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.5858209">
+        <state line="53" column="0" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.66857797">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/service/LocationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="1" selection-start="3293" selection-end="3474" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="39" selection-start="803" selection-end="803" vertical-scroll-proportion="0.37041286">
-          <folding />
+        <state line="28" column="90" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.6989721">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -966,10 +932,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>WinnipegTransitAPI:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

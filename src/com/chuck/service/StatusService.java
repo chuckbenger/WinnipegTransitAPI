@@ -3,6 +3,9 @@ package com.chuck.service;
 import com.chuck.core.filter.FilterQuery;
 import com.chuck.core.result.status.Status;
 
+import java.io.InputStream;
+import java.net.URI;
+
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -43,9 +46,14 @@ public class StatusService extends TransitService {
      *
      * @return returns the status of the transit service
      */
-    public Status getTransitStatus() throws Exception {
+    public URI getTransitStatus() throws Exception {
         FilterQuery filterQuery = new FilterQuery(this);
-        return executeQuery(filterQuery, Status.class);
+        return filterQuery.buildQuery();
+    }
+
+    @Override
+    public Status convertStreamToObject(InputStream inputStream) throws Exception {
+        return super.convertStreamToObject(Status.class, inputStream);
     }
 
     @Override

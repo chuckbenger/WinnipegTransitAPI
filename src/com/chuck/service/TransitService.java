@@ -1,9 +1,9 @@
 package com.chuck.service;
 
-import com.chuck.core.WinnipegTransitRequest;
-import com.chuck.core.filter.Query;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
+
+import java.io.InputStream;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -40,11 +40,12 @@ public abstract class TransitService {
     }
 
     /**
-     * Initializes the requester and serializer
+     * Gets the api get as an http param
+     *
+     * @return returns the api key
      */
-    protected TransitService() {
-        this.requester = new WinnipegTransitRequest();
-        this.serializer = new Persister();
+    public static String getApiKeyParam() {
+        return "api-key=" + apiKey;
     }
 
     /**
@@ -57,35 +58,32 @@ public abstract class TransitService {
     }
 
     /**
-     * All services shared the same requester instance
-     */
-    protected WinnipegTransitRequest requester;
-
-    /**
-     * Used for converting xml to a java object
-     */
-    protected Serializer serializer;
-
-    /**
      * Gets the api transitService name set by the implementing class.
      *
      * @return returns the api transitService name
      */
     public abstract String getServiceName();
 
-
     /**
-     * Executes the input query and returns a Locations instance
+     * Returns the class that can be used to map the returned xml to java objects
      *
-     * @param query        the query to execute
-     * @param parsedObject the class the parser will use to convert the xml to
-     * @param <T>          The type of the passed in class
-     * @return returns the Locations instance
+     * @param convertToClass the class to map the result to
+     * @param inputStream    the stream to read from
+     * @return returns a object mapping of the xml
      * @throws Exception
      */
-    protected <T> T executeQuery(Query query, Class<T> parsedObject) throws Exception {
-
-        String xml = requester.sendXMLRequest(query);
-        return serializer.read(parsedObject, xml);
+    protected <T> T convertStreamToObject(Class<T> convertToClass, InputStream inputStream) throws Exception {
+        Serializer serializer = new Persister();
+        return serializer.read(convertToClass, inputStream);
     }
+
+    /**
+     * Override to map an input stream to a specific object
+     *
+     * @param inputStream the input stream to read from
+     * @param <T>         The object that will be returned
+     * @return return the input stream mapped to an object
+     * @throws Exception
+     */
+    public abstract <T> T convertStreamToObject(InputStream inputStream) throws Exception;
 }

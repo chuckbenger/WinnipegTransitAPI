@@ -1,7 +1,9 @@
 package com.chuck.core.filter;
 
 import com.chuck.service.TransitService;
-import org.apache.http.client.methods.HttpGet;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -36,14 +38,9 @@ public class IdentityQuery extends Query {
         this.identity = identity;
     }
 
-    @Override
-    public void setAPIKey(String apiKey) {
-        this.apiKey = apiKey;
-    }
 
     @Override
-    public HttpGet buildQuery() {
-        String url = BASE_REQUEST_URL_WITH_PROTOCOL + identity + "?api-key=" + apiKey;
-        return new HttpGet(url);
+    public URI buildQuery() throws URISyntaxException {
+        return new URI(BASE_REQUEST_URL_WITH_PROTOCOL + identity + "?" + TransitService.getApiKeyParam());
     }
 }
