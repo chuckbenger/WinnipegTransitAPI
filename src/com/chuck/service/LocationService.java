@@ -94,7 +94,7 @@ public class LocationService extends TransitService {
 
 
     @Override
-    public Locations convertStreamToObject(InputStream inputStream) throws Exception {
+    public Locations convertStreamToObject(InputStream inputStream) {
         return super.convertStreamToObject(Locations.class, inputStream);
     }
 

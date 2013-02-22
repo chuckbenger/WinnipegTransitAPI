@@ -1,10 +1,14 @@
 package com.chuck.core.result.stops;
 
+import com.chuck.core.result.Result;
 import com.chuck.core.result.location.Centre;
 import com.chuck.core.result.location.Street;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementMap;
 import org.simpleframework.xml.Root;
+
+import java.util.Map;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -26,7 +30,7 @@ import org.simpleframework.xml.Root;
  */
 
 @Root(name = "stop")
-public class StopNode {
+public class StopNode extends Result {
 
     @Attribute
     private String href;
@@ -40,11 +44,11 @@ public class StopNode {
     @Element
     private int number;
 
-    @Element
-    private Direction direction;
+    @ElementMap(entry = "direction", key = "abbr", inline = true, attribute = true)
+    private Map<String, String> direction;
 
-    @Element
-    private Side side;
+    @ElementMap(entry = "side", key = "abbr", attribute = true, inline = true)
+    private Map<String, String> side;
 
     @Element
     private Street street;
@@ -74,11 +78,11 @@ public class StopNode {
         return number;
     }
 
-    public Direction getDirection() {
+    public Map<String, String> getDirection() {
         return direction;
     }
 
-    public Side getSide() {
+    public Map<String, String> getSide() {
         return side;
     }
 

@@ -69,12 +69,16 @@ public abstract class TransitService {
      *
      * @param convertToClass the class to map the result to
      * @param inputStream    the stream to read from
-     * @return returns a object mapping of the xml
+     * @return returns a object mapping of the xml or null if error occured
      * @throws Exception
      */
-    protected <T> T convertStreamToObject(Class<T> convertToClass, InputStream inputStream) throws Exception {
-        Serializer serializer = new Persister();
-        return serializer.read(convertToClass, inputStream);
+    protected <T> T convertStreamToObject(Class<T> convertToClass, InputStream inputStream) {
+        try {
+            Serializer serializer = new Persister();
+            return serializer.read(convertToClass, inputStream);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     /**
@@ -85,5 +89,5 @@ public abstract class TransitService {
      * @return return the input stream mapped to an object
      * @throws Exception
      */
-    public abstract <T> T convertStreamToObject(InputStream inputStream) throws Exception;
+    public abstract <T> T convertStreamToObject(InputStream inputStream);
 }

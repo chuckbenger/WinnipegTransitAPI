@@ -1,11 +1,10 @@
 package com.chuck.service;
 
 import com.chuck.core.filter.FilterQuery;
-import com.chuck.core.result.status.Status;
+import com.chuck.core.result.route.Route;
 
 import java.io.InputStream;
 import java.net.URI;
-import java.net.URISyntaxException;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -25,40 +24,45 @@ import java.net.URISyntaxException;
  * specific language governing permissions and limitations
  * under the License.
  */
-public class StatusService extends TransitService {
+public class RoutesService extends TransitService {
 
-    private static StatusService INSTANCE;
+    private static RoutesService INSTANCE;
 
     /**
-     * Returns an instance of StatusService
+     * Returns an instance of RoutesService.
      *
-     * @return returns a StatusService object
+     * @return returns a RoutesService object
      */
-    public static StatusService getInstance() {
+    public static RoutesService getInstance() {
 
         if (INSTANCE == null)
-            INSTANCE = new StatusService();
+            INSTANCE = new RoutesService();
 
         return INSTANCE;
     }
 
     /**
-     * Builds a request and gets the current transit status
+     * Builds a query to get all routes that stop at the specified stop
      *
-     * @return returns the status of the transit service
+     * @param stopNumber the stop number to get stops at
+     * @return Returns the built query
+     * @throws Exception
      */
-    public URI getTransitStatus() throws URISyntaxException {
-        FilterQuery filterQuery = new FilterQuery(this);
-        return filterQuery.buildQuery();
-    }
+    public URI atStop(String stopNumber) throws Exception {
+        FilterQuery query = new FilterQuery(this);
 
-    @Override
-    public Status convertStreamToObject(InputStream inputStream) {
-        return super.convertStreamToObject(Status.class, inputStream);
+        query.addParameter("stop", stopNumber);
+
+        return query.buildQuery();
     }
 
     @Override
     public String getServiceName() {
-        return "statuses";
+        return "routes";
+    }
+
+    @Override
+    public Route convertStreamToObject(InputStream inputStream) {
+        return super.convertStreamToObject(Route.class, inputStream);
     }
 }

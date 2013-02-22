@@ -1,5 +1,6 @@
 package com.chuck.core.result.location;
 
+import com.chuck.core.result.Result;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 
@@ -27,7 +28,7 @@ import org.simpleframework.xml.Element;
  */
 
 @Element(name = "type", type = String.class)
-public class StreetType {
+public class StreetType extends Result {
 
     @Attribute
     private String abbr;

@@ -1,7 +1,6 @@
-package com.chuck.core.result.stops;
+package com.chuck.core.result;
 
-import org.simpleframework.xml.Attribute;
-import org.simpleframework.xml.Element;
+import java.io.Serializable;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,13 +20,5 @@ import org.simpleframework.xml.Element;
  * specific language governing permissions and limitations
  * under the License.
  */
-@Element(type = Double.class)
-public class Measurement {
-
-    public String getUnit() {
-        return unit;
-    }
-
-    @Attribute
-    private String unit;
+public abstract class Result implements Serializable {
 }

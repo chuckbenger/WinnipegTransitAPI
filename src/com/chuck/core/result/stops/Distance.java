@@ -1,6 +1,10 @@
 package com.chuck.core.result.stops;
 
+import com.chuck.core.result.Result;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementMap;
+
+import java.util.Map;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,20 +25,39 @@ import org.simpleframework.xml.Element;
  * under the License.
  */
 @Element
-public class Distance {
+public class Distance extends Result {
 
-    @Element(name = "direct")
-    private Measurement direct;
+    @ElementMap(entry = "direct", key = "unit", attribute = true, inline = true)
+    private Map<String, Double> direct;
 
-    @Element(name = "walking")
-    private Measurement walking;
+    @ElementMap(entry = "walking", key = "unit", attribute = true, inline = true)
+    private Map<String, Double> walking;
 
-    public Measurement getDirect() {
+
+    public Map<String, Double> getDirect() {
         return direct;
     }
 
-    public Measurement getWalking() {
+    public Map<String, Double> getWalking() {
         return walking;
+    }
+
+    /**
+     * Returns a string containing all the distance metrics covered in the walking map
+     *
+     * @return returns the metric string
+     */
+    public String getWalkingString() {
+        String walkingString = "";
+
+        for (String key : walking.keySet())
+            walkingString += walking.get(key) + " " + key + "/";
+
+        //Trim off the last backslash
+        if (walkingString.length() >= 1)
+            walkingString = walkingString.substring(0, walkingString.length() - 1);
+
+        return walkingString;
     }
 
     @Override

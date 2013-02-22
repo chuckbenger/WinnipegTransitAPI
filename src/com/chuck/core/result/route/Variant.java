@@ -1,4 +1,4 @@
-package com.chuck.core.result.stops;
+package com.chuck.core.result.route;
 
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
@@ -21,21 +21,20 @@ import org.simpleframework.xml.Element;
  * specific language governing permissions and limitations
  * under the License.
  */
-
-@Element(type = String.class)
-public class Direction {
+@Element
+public class Variant {
 
     @Attribute
-    private String abbr;
+    private String href;
 
-    public String getAbbr() {
-        return abbr;
+    public String getHref() {
+        return href;
     }
 
     @Override
     public String toString() {
-        return "Direction{" +
-                "abbr='" + abbr + '\'' +
+        return "\nVariant{" +
+                "href='" + href + '\'' +
                 '}';
     }
 }

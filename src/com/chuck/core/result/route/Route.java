@@ -1,7 +1,11 @@
-package com.chuck.core.result.stops;
+package com.chuck.core.result.route;
 
+import com.chuck.core.result.Result;
 import org.simpleframework.xml.Attribute;
-import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Root;
+
+import java.util.List;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,20 +25,36 @@ import org.simpleframework.xml.Element;
  * specific language governing permissions and limitations
  * under the License.
  */
-@Element(type = String.class)
-public class Side {
+@Root(name = "routes")
+public class Route extends Result {
 
     @Attribute
-    private String abbr;
+    private String base;
 
-    public String getAbbr() {
-        return abbr;
+    @Attribute(name = "query-time")
+    private String queryTime;
+
+    @ElementList(inline = true, required = false)
+    private List<RouteNode> routeNodes;
+
+    public String getBase() {
+        return base;
+    }
+
+    public String getQueryTime() {
+        return queryTime;
+    }
+
+    public List<RouteNode> getRouteNodes() {
+        return routeNodes;
     }
 
     @Override
     public String toString() {
-        return "Side{" +
-                "abbr='" + abbr + '\'' +
+        return "\nRoute{" +
+                "base='" + base + '\'' +
+                ", queryTime='" + queryTime + '\'' +
+                ", routeNodes=" + routeNodes +
                 '}';
     }
 }

@@ -1,5 +1,6 @@
 package com.chuck.core.result.status;
 
+import com.chuck.core.result.Result;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
@@ -26,7 +27,7 @@ import java.util.List;
  */
 
 @Root(name = "statuses")
-public class Status {
+public class Status extends Result {
 
     @Attribute
     private String base;

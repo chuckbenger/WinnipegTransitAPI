@@ -1,5 +1,6 @@
 package com.chuck.core.result.message;
 
+import com.chuck.core.result.Result;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -23,7 +24,7 @@ import org.simpleframework.xml.Root;
  */
 
 @Root(name = "message")
-public class MessageNode {
+public class MessageNode extends Result {
 
     @Element
     private String type;

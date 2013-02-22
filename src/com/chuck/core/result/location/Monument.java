@@ -1,5 +1,6 @@
 package com.chuck.core.result.location;
 
+import com.chuck.core.result.Result;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
@@ -30,7 +31,7 @@ import java.util.List;
  */
 
 @Root
-public class Monument {
+public class Monument extends Result {
 
     @Element
     private String key;

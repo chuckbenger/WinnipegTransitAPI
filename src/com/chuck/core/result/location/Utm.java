@@ -1,5 +1,6 @@
 package com.chuck.core.result.location;
 
+import com.chuck.core.result.Result;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
@@ -28,7 +29,7 @@ import org.simpleframework.xml.Root;
  */
 
 @Root
-public class Utm {
+public class Utm extends Result {
 
     @Attribute
     private String zone;

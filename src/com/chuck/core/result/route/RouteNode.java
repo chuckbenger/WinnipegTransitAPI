@@ -1,9 +1,11 @@
-package com.chuck.core.result.status;
+package com.chuck.core.result.route;
 
-import com.chuck.core.result.Result;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
+
+import java.util.List;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -23,60 +25,71 @@ import org.simpleframework.xml.Root;
  * specific language governing permissions and limitations
  * under the License.
  */
-@Root(name = "status")
-public class StatusNode extends Result {
+@Root(name = "route")
+public class RouteNode {
 
     @Attribute
     private String href;
 
     @Element
-    private String name;
+    private String key;
 
     @Element
-    private String value;
+    private String number;
+
+    @Element
+    private String name;
 
     @Element(required = false)
     private String description;
 
-    @Element(required = false, name = "updated-at")
-    private String updatedAt;
+    @Element(name = "customer-type")
+    private String customerType;
 
-    @Element(required = false)
-    private String message;
+    @Element
+    private String coverage;
+
+    @ElementList
+    private List<Variant> variants;
 
     public String getHref() {
         return href;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public String getNumber() {
+        return number;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getValue() {
-        return value;
+    public String getCustomerType() {
+        return customerType;
     }
 
-    public String getDescription() {
-        return description;
+    public String getCoverage() {
+        return coverage;
     }
 
-    public String getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public String getMessage() {
-        return message;
+    public List<Variant> getVariants() {
+        return variants;
     }
 
     @Override
     public String toString() {
-        return "StatusNode{" +
-                "\nhref='" + href + '\'' +
-                ", \nname='" + name + '\'' +
-                ", \nvalue='" + value + '\'' +
-                ", \ndescription='" + description + '\'' +
-                ", \nupdatedAt='" + updatedAt + '\'' +
-                ", \nmessage='" + message + '\'' +
+        return "\nRouteNode{" +
+                "href='" + href + '\'' +
+                ", key='" + key + '\'' +
+                ", number='" + number + '\'' +
+                ", name='" + name + '\'' +
+                ", customerType='" + customerType + '\'' +
+                ", coverage='" + coverage + '\'' +
+                ", variants=" + variants +
                 '}';
     }
 }

@@ -95,7 +95,7 @@ public class BusStopService extends TransitService {
     }
 
     @Override
-    public Stop convertStreamToObject(InputStream inputStream) throws Exception {
+    public Stop convertStreamToObject(InputStream inputStream) {
         return super.convertStreamToObject(Stop.class, inputStream);
     }
 }

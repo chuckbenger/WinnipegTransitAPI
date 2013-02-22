@@ -54,7 +54,7 @@ public class NoticeService extends TransitService {
 
 
     @Override
-    public SystemMessage convertStreamToObject(InputStream inputStream) throws Exception {
+    public SystemMessage convertStreamToObject(InputStream inputStream) {
         return super.convertStreamToObject(SystemMessage.class, inputStream);
     }
 
