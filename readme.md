@@ -11,7 +11,7 @@ The API is pretty simple just create and instance of WinnipegTransitRequest clas
     Locations queryResult = locationService.atUTMCoordinate(633861, 5525798,100,10);
 
 ##Dependancies
-The following libraries are required to use WinnipegTransitAPI. Android has these by default.
+The following libraries are required to use WinnipegTransitAPI.
 * commons-logging-1.1.1.jar
 * httpclient-4.2.3.jar
 * httpcore-4.2.2.jar
