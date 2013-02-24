@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f51a1c7-2595-4db7-904a-9f88be8322d4" name="Default" comment="Added xml mappings for Schedules and a helper method to build the needed URI request">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/result/location/Locations.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/location/Locations.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/Main.java" afterPath="$PROJECT_DIR$/src/com/chuck/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" afterPath="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/core/result/stops/Stop.java" afterPath="$PROJECT_DIR$/src/com/chuck/core/result/stops/Stop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" afterPath="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WinnipegTransitAPI.iws" />
@@ -25,8 +22,8 @@
     <file path="/Location.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359671330784" ignored="false" />
     <file path="/WildCardQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359929131131" ignored="false" />
     <file path="/readme" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598576310" ignored="false" />
-    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361682911521" ignored="false" />
-    <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361681194595" ignored="false" />
+    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361682936929" ignored="false" />
+    <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361682999313" ignored="false" />
     <file path="/APIMode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599790196" ignored="false" />
     <file path="/ServiceNotFound.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600829882" ignored="false" />
     <file path="/Status.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359931534920" ignored="false" />
@@ -263,19 +260,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="14" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
+            <state line="14" column="34" selection-start="645" selection-end="645" vertical-scroll-proportion="0.40823328">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RequestTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chuck/test/RequestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="20" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.6020583">
+            <state line="56" column="25" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -345,12 +342,12 @@
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/schedule/RouteSchedule.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/schedule/Bus.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/schedule/Times.java" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/com/chuck/Main.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/Stop.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/location/Locations.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -853,7 +850,11 @@
       <created>1361681202537</created>
       <updated>1361681202537</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added xml mappings for Schedules and a helper method to build the needed URI request">
+      <created>1361682945777</created>
+      <updated>1361682945777</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -877,7 +878,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19370331" sideWeight="0.6781737" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32182628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32182628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -988,13 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="9" selection-start="450" selection-end="965" vertical-scroll-proportion="0.0">
@@ -1074,7 +1068,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/test/RequestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="20" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.6020583">
+        <state line="56" column="25" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="645" selection-end="645" vertical-scroll-proportion="0.40823328">
           <folding />
         </state>
       </provider>

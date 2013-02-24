@@ -12,7 +12,7 @@ The API is pretty simple just create and instance of WinnipegTransitRequest clas
 
 ##Currently supports the following API's
 * Scheduled times for a stop
-* Bus stops around a geometric position
+* Bus stops around a geometric/UTM position
 * System messages
 * Routes at a specific stop
 * Status of transit
