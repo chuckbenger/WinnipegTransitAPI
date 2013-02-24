@@ -42,11 +42,11 @@ public class Locations extends Result {
     @ElementList(required = false, inline = true)
     private List<Intersection> intersection;
 
-    public List<Monument> getMonument() {
+    public List<Monument> getMonuments() {
         return monument;
     }
 
-    public List<Address> getAddress() {
+    public List<Address> getAddresses() {
         return address;
     }
 

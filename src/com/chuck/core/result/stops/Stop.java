@@ -31,7 +31,7 @@ public class Stop extends Result {
     @ElementList(inline = true, required = false)
     private List<StopNode> stop;
 
-    public List<StopNode> getStop() {
+    public List<StopNode> getStops() {
         return stop;
     }
 

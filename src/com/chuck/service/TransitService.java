@@ -77,7 +77,6 @@ public abstract class TransitService {
             Serializer serializer = new Persister();
             return serializer.read(convertToClass, inputStream);
         } catch (Exception e) {
-            System.out.println(e);
             return null;
         }
     }
