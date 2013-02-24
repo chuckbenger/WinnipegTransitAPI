@@ -10,6 +10,14 @@ The API is pretty simple just create and instance of WinnipegTransitRequest clas
     Location locationService = Location.getInstance();
     Locations queryResult = locationService.atUTMCoordinate(633861, 5525798,100,10);
 
+##Currently supports the following API's
+* Scheduled times for a stop
+* Bus stops around a geometric position
+* System messages
+* Routes at a specific stop
+* Status of transit
+
+
 ##Dependancies
 The following libraries are required to use WinnipegTransitAPI.
 * commons-logging-1.1.1.jar
