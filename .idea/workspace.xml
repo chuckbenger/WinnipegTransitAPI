@@ -22,8 +22,8 @@
     <file path="/Location.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359671330784" ignored="false" />
     <file path="/WildCardQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359929131131" ignored="false" />
     <file path="/readme" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598576310" ignored="false" />
-    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361682936929" ignored="false" />
-    <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361682999313" ignored="false" />
+    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361683001416" ignored="false" />
+    <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361683189427" ignored="false" />
     <file path="/APIMode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599790196" ignored="false" />
     <file path="/ServiceNotFound.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600829882" ignored="false" />
     <file path="/Status.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359931534920" ignored="false" />
@@ -254,7 +254,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="9" selection-start="450" selection-end="965" vertical-scroll-proportion="0.0">
+            <state line="25" column="30" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -263,7 +263,7 @@
       <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="34" selection-start="645" selection-end="645" vertical-scroll-proportion="0.40823328">
+            <state line="7" column="39" selection-start="329" selection-end="329" vertical-scroll-proportion="0.20411664">
               <folding />
             </state>
           </provider>
@@ -272,7 +272,7 @@
       <file leaf-file-name="RequestTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chuck/test/RequestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="25" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
+            <state line="53" column="87" selection-start="1886" selection-end="1963" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -854,7 +854,11 @@
       <created>1361682945777</created>
       <updated>1361682945777</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added xml mappings for Schedules and a helper method to build the needed URI request">
+      <created>1361683004726</created>
+      <updated>1361683004726</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -989,13 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="450" selection-end="965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/TransitService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="17" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.3327616">
@@ -1066,16 +1063,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="30" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/test/RequestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="25" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
+        <state line="53" column="87" selection-start="1886" selection-end="1963" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="645" selection-end="645" vertical-scroll-proportion="0.40823328">
+        <state line="7" column="39" selection-start="329" selection-end="329" vertical-scroll-proportion="0.20411664">
           <folding />
         </state>
       </provider>

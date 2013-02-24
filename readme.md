@@ -3,12 +3,13 @@
 This is a simple Java library fully compatible with Android to make use of the Winnipeg Transit API (http://api.winnipegtransit.com).
 
 ##Usage
-The API is pretty simple just create and instance of WinnipegTransitRequest class and you're good to go
+The API is pretty simple just create and instance of a service using the singleton method and you're good to go
 
-	//Pull locations around a utm coordinate within 100 meters with a limit of 10
-	TransitService.init("my api key");
-    Location locationService = Location.getInstance();
-    Locations queryResult = locationService.atUTMCoordinate(633861, 5525798,100,10);
+	//Pull locations around a geometric coordinate within 100 meters with a limit of 10
+	BusStopService service = BusStopService.getInstance();
+    URI busStops = service.atGeographicCoordinate(49.895, -97.138, 500, 10, true);
+    //Send the web request using whatever library you want
+    Stop stop = service.convertStreamToObject(inputstream);
 
 ##Currently supports the following API's
 * Scheduled times for a stop
