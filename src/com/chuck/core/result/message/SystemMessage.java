@@ -1,7 +1,6 @@
 package com.chuck.core.result.message;
 
 import com.chuck.core.result.Result;
-import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
@@ -29,22 +28,8 @@ import java.util.List;
 @Root(name = "system-messages")
 public class SystemMessage extends Result {
 
-    @Attribute
-    private String base;
-
-    @Attribute(name = "query-time")
-    private String queryTime;
-
     @ElementList(inline = true, required = false)
     private List<MessageNode> message;
-
-    public String getBase() {
-        return base;
-    }
-
-    public String getQueryTime() {
-        return queryTime;
-    }
 
     public List<MessageNode> getMessages() {
         return message;

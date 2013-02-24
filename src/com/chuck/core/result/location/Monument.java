@@ -1,10 +1,10 @@
 package com.chuck.core.result.location;
 
-import com.chuck.core.result.Result;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -31,7 +31,7 @@ import java.util.List;
  */
 
 @Root
-public class Monument extends Result {
+public class Monument implements Serializable {
 
     @Element
     private String key;

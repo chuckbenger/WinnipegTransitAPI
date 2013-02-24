@@ -1,9 +1,10 @@
 package com.chuck.core.result.location;
 
-import com.chuck.core.result.Result;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+
+import java.io.Serializable;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -29,7 +30,7 @@ import org.simpleframework.xml.Root;
  */
 
 @Root
-public class Street extends Result {
+public class Street implements Serializable {
 
     @Attribute
     private String href;

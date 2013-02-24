@@ -1,5 +1,7 @@
 package com.chuck.core.result;
 
+import org.simpleframework.xml.Attribute;
+
 import java.io.Serializable;
 
 /**
@@ -21,4 +23,20 @@ import java.io.Serializable;
  * under the License.
  */
 public abstract class Result implements Serializable {
+
+    @Attribute(required = false)
+    protected String base;
+
+    @Attribute(name = "query-time", required = false)
+    protected String queryTime;
+
+    public String getBase() {
+        return base;
+    }
+
+    public String getQueryTime() {
+        return queryTime;
+    }
+
+
 }

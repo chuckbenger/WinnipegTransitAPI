@@ -1,9 +1,9 @@
 package com.chuck.core.result.stops;
 
-import com.chuck.core.result.Result;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementMap;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
@@ -25,7 +25,7 @@ import java.util.Map;
  * under the License.
  */
 @Element
-public class Distance extends Result {
+public class Distance implements Serializable {
 
     @ElementMap(entry = "direct", key = "unit", attribute = true, inline = true)
     private Map<String, Double> direct;

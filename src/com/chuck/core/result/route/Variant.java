@@ -3,6 +3,8 @@ package com.chuck.core.result.route;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 
+import java.io.Serializable;
+
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -22,7 +24,7 @@ import org.simpleframework.xml.Element;
  * under the License.
  */
 @Element
-public class Variant {
+public class Variant implements Serializable {
 
     @Attribute
     private String href;

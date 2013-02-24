@@ -5,6 +5,7 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -26,7 +27,7 @@ import java.util.List;
  * under the License.
  */
 @Root(name = "route")
-public class RouteNode {
+public class RouteNode implements Serializable {
 
     @Attribute
     private String href;
@@ -49,7 +50,7 @@ public class RouteNode {
     @Element
     private String coverage;
 
-    @ElementList
+    @ElementList(required = false)
     private List<Variant> variants;
 
     public String getHref() {

@@ -1,6 +1,5 @@
 package com.chuck.core.result.stops;
 
-import com.chuck.core.result.Result;
 import com.chuck.core.result.location.Centre;
 import com.chuck.core.result.location.Street;
 import org.simpleframework.xml.Attribute;
@@ -8,6 +7,7 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementMap;
 import org.simpleframework.xml.Root;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
@@ -30,7 +30,7 @@ import java.util.Map;
  */
 
 @Root(name = "stop")
-public class StopNode extends Result {
+public class StopNode implements Serializable {
 
     @Attribute
     private String href;
@@ -59,7 +59,7 @@ public class StopNode extends Result {
     @Element
     private Centre centre;
 
-    @Element
+    @Element(required = false)
     private Distance distances;
 
     public String getHref() {

@@ -72,11 +72,12 @@ public abstract class TransitService {
      * @return returns a object mapping of the xml or null if error occured
      * @throws Exception
      */
-    protected <T> T convertStreamToObject(Class<T> convertToClass, InputStream inputStream) {
+    public <T> T convertStreamToObject(Class<T> convertToClass, InputStream inputStream) {
         try {
             Serializer serializer = new Persister();
             return serializer.read(convertToClass, inputStream);
         } catch (Exception e) {
+            System.out.println(e);
             return null;
         }
     }

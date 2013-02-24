@@ -2,7 +2,6 @@ package com.chuck.core.result.location;
 
 
 import com.chuck.core.result.Result;
-import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
@@ -34,12 +33,6 @@ import java.util.List;
 @Root
 public class Locations extends Result {
 
-    @Attribute(name = "query-time")
-    private String queryTime;
-
-    @Attribute
-    private String base;
-
     @ElementList(required = false, inline = true)
     private List<Monument> monument;
 
@@ -48,15 +41,6 @@ public class Locations extends Result {
 
     @ElementList(required = false, inline = true)
     private List<Intersection> intersection;
-
-
-    public String getQueryTime() {
-        return queryTime;
-    }
-
-    public String getBase() {
-        return base;
-    }
 
     public List<Monument> getMonument() {
         return monument;

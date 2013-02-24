@@ -1,10 +1,12 @@
 package com.chuck.service;
 
 import com.chuck.core.filter.FilterQuery;
+import com.chuck.core.filter.IdentityQuery;
 import com.chuck.core.result.stops.Stop;
 
 import java.io.InputStream;
 import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -87,6 +89,17 @@ public class BusStopService extends TransitService {
             query.addParameter("walking", true);
 
         return query.buildQuery();
+    }
+
+    /**
+     * Creates a new identity query to get stop schedules for the current stop
+     *
+     * @param stopNumber The stop number to get schedule for
+     * @return Returns the built query
+     * @throws URISyntaxException
+     */
+    public URI scheduleForStop(String stopNumber) throws URISyntaxException {
+        return new IdentityQuery(this, getServiceName() + "/" + stopNumber + "/schedule").buildQuery();
     }
 
     @Override

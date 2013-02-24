@@ -1,4 +1,4 @@
-package com.chuck.core.result.location;
+package com.chuck.core.result;
 
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
@@ -22,26 +22,11 @@ import java.io.Serializable;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * <p/>
- * User: chuck
- * Date: 31/01/13
- * Time: 12:58 PM
  */
 
-@Element(name = "type", type = String.class)
-public class StreetType implements Serializable {
+@Element
+public class NodeWithHref implements Serializable {
 
     @Attribute
-    private String abbr;
-
-    public String getAbbr() {
-        return abbr;
-    }
-
-    @Override
-    public String toString() {
-        return "StreetType{" +
-                "abbr='" + abbr + '\'' +
-                '}';
-    }
+    private String href;
 }

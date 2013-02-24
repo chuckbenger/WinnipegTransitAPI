@@ -1,9 +1,10 @@
 package com.chuck.core.result.location;
 
-import com.chuck.core.result.Result;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+
+import java.io.Serializable;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -28,7 +29,7 @@ import org.simpleframework.xml.Root;
  * Time: 1:00 PM
  */
 @Root
-public class Centre extends Result {
+public class Centre implements Serializable {
 
     @Attribute(name = "xmlns:utm", required = false)
     private String utm_attr;

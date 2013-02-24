@@ -1,9 +1,12 @@
-package com.chuck.core.result.location;
+package com.chuck.core.result.schedule;
 
+import com.chuck.core.result.Result;
+import com.chuck.core.result.stops.StopNode;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import java.io.Serializable;
+import java.util.List;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,72 +25,29 @@ import java.io.Serializable;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * <p/>
- * User: chuck
- * Date: 31/01/13
- * Time: 12:55 PM
  */
-
-@Root
-public class Address implements Serializable {
-
-    @Element
-    private String key;
-
-    @Element(name = "street-number")
-    private int streetNumber;
+@Root(name = "stop-schedule")
+public class StopSchedule extends Result {
 
     @Element
-    private Street street;
+    private StopNode stop;
 
-    @Element
-    private Centre centre;
+    @ElementList(name = "route-schedules")
+    private List<RouteSchedule> routeSchedules;
 
-    public String getKey() {
-        return key;
+    public StopNode getStop() {
+        return stop;
     }
 
-    public int getStreetNumber() {
-        return streetNumber;
-    }
-
-    public Street getStreet() {
-        return street;
-    }
-
-    public Centre getCentre() {
-        return centre;
+    public List<RouteSchedule> getRouteSchedules() {
+        return routeSchedules;
     }
 
     @Override
     public String toString() {
-        return "Address{" +
-                "key=" + key +
-                ", streetNumber=" + streetNumber +
-                ", street=" + street +
-                ", centre=" + centre +
+        return "\nStopSchedule{" +
+                "stop=" + stop +
+                ", routeSchedules=" + routeSchedules +
                 '}';
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

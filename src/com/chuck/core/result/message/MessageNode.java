@@ -1,8 +1,9 @@
 package com.chuck.core.result.message;
 
-import com.chuck.core.result.Result;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+
+import java.io.Serializable;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -24,7 +25,7 @@ import org.simpleframework.xml.Root;
  */
 
 @Root(name = "message")
-public class MessageNode extends Result {
+public class MessageNode implements Serializable {
 
     @Element
     private String type;

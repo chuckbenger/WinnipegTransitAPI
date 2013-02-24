@@ -1,5 +1,6 @@
-package com.chuck.core.result.location;
+package com.chuck.core.result.schedule;
 
+import com.chuck.core.result.variant.Variant;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -22,72 +23,46 @@ import java.io.Serializable;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * <p/>
- * User: chuck
- * Date: 31/01/13
- * Time: 12:55 PM
  */
 
-@Root
-public class Address implements Serializable {
+@Root(name = "scheduled-stop")
+public class ScheduledStop implements Serializable {
 
     @Element
     private String key;
 
-    @Element(name = "street-number")
-    private int streetNumber;
+    @Element
+    private Times times;
 
     @Element
-    private Street street;
+    private Bus bus;
 
     @Element
-    private Centre centre;
+    private Variant variant;
 
     public String getKey() {
         return key;
     }
 
-    public int getStreetNumber() {
-        return streetNumber;
+    public Times getTimes() {
+        return times;
     }
 
-    public Street getStreet() {
-        return street;
+    public Bus getBus() {
+        return bus;
     }
 
-    public Centre getCentre() {
-        return centre;
+    public Variant getVariant() {
+        return variant;
     }
 
     @Override
     public String toString() {
-        return "Address{" +
-                "key=" + key +
-                ", streetNumber=" + streetNumber +
-                ", street=" + street +
-                ", centre=" + centre +
+        return "\nScheduledStop{" +
+                "key='" + key + '\'' +
+                ", times=" + times +
+                ", bus=" + bus +
+                ", variant=" + variant +
                 '}';
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

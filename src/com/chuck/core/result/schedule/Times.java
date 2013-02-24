@@ -1,4 +1,4 @@
-package com.chuck.core.result.location;
+package com.chuck.core.result.schedule;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
@@ -22,72 +22,56 @@ import java.io.Serializable;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * <p/>
- * User: chuck
- * Date: 31/01/13
- * Time: 12:55 PM
  */
 
-@Root
-public class Address implements Serializable {
+@Element
+public class Times implements Serializable {
 
     @Element
-    private String key;
-
-    @Element(name = "street-number")
-    private int streetNumber;
+    private Time arrival;
 
     @Element
-    private Street street;
+    private Time departure;
 
-    @Element
-    private Centre centre;
+    @Root
+    public static class Time implements Serializable {
 
-    public String getKey() {
-        return key;
+        @Element
+        private String scheduled;
+
+        @Element
+        private String estimated;
+
+        public String getScheduled() {
+            return scheduled;
+        }
+
+        public String getEstimated() {
+            return estimated;
+        }
+
+        @Override
+        public String toString() {
+            return "Time{" +
+                    "scheduled='" + scheduled + '\'' +
+                    ", estimated='" + estimated + '\'' +
+                    '}';
+        }
     }
 
-    public int getStreetNumber() {
-        return streetNumber;
+    public Time getArrival() {
+        return arrival;
     }
 
-    public Street getStreet() {
-        return street;
-    }
-
-    public Centre getCentre() {
-        return centre;
+    public Time getDeparture() {
+        return departure;
     }
 
     @Override
     public String toString() {
-        return "Address{" +
-                "key=" + key +
-                ", streetNumber=" + streetNumber +
-                ", street=" + street +
-                ", centre=" + centre +
+        return "\nTimes{" +
+                "arrival=" + arrival +
+                ", \ndeparture=" + departure +
                 '}';
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

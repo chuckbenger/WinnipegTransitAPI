@@ -1,9 +1,10 @@
-package com.chuck.core.result.location;
+package com.chuck.core.result.variant;
 
+import com.chuck.core.result.NodeWithHref;
+import com.chuck.core.result.Result;
+import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
-
-import java.io.Serializable;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,72 +23,54 @@ import java.io.Serializable;
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * <p/>
- * User: chuck
- * Date: 31/01/13
- * Time: 12:55 PM
  */
 
 @Root
-public class Address implements Serializable {
+public class Variant extends Result {
+
+    @Attribute
+    private String href;
 
     @Element
     private String key;
 
-    @Element(name = "street-number")
-    private int streetNumber;
+    @Element
+    private String name;
+
+    @Element(required = false)
+    private String description;
 
     @Element
-    private Street street;
+    private NodeWithHref destinations;
 
-    @Element
-    private Centre centre;
+    public String getHref() {
+        return href;
+    }
 
     public String getKey() {
         return key;
     }
 
-    public int getStreetNumber() {
-        return streetNumber;
+    public String getName() {
+        return name;
     }
 
-    public Street getStreet() {
-        return street;
+    public String getDescription() {
+        return description;
     }
 
-    public Centre getCentre() {
-        return centre;
+    public NodeWithHref getDestinations() {
+        return destinations;
     }
 
     @Override
     public String toString() {
-        return "Address{" +
-                "key=" + key +
-                ", streetNumber=" + streetNumber +
-                ", street=" + street +
-                ", centre=" + centre +
+        return "\nVariant{" +
+                "href='" + href + '\'' +
+                ", key='" + key + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", destinations=" + destinations +
                 '}';
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

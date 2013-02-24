@@ -1,8 +1,9 @@
 package com.chuck.core.result.location;
 
-import com.chuck.core.result.Result;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+
+import java.io.Serializable;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -28,7 +29,7 @@ import org.simpleframework.xml.Root;
  */
 
 @Root
-public class Intersection extends Result {
+public class Intersection implements Serializable {
 
     @Element
     private String key;
