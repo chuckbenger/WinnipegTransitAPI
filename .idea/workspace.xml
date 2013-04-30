@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f51a1c7-2595-4db7-904a-9f88be8322d4" name="Default" comment="Added xml mappings for Schedules and a helper method to build the needed URI request">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/Main.java" afterPath="$PROJECT_DIR$/src/com/chuck/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" afterPath="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WinnipegTransitAPI.iws" />
@@ -14,15 +14,15 @@
     <file path="/WinnipegTransitRequest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359683946985" ignored="false" />
     <file path="/Request.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359584887319" ignored="false" />
     <file path="/Query.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359604868377" ignored="false" />
-    <file path="/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361680722322" ignored="false" />
-    <file path="/fragment.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361677327467" ignored="false" />
+    <file path="/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362797880704" ignored="false" />
+    <file path="/fragment.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362795976926" ignored="false" />
     <file path="/FilterQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359929155717" ignored="false" />
     <file path="/Service.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359604821922" ignored="false" />
     <file path="/RequestTest.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361682797002" ignored="false" />
     <file path="/Location.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359671330784" ignored="false" />
     <file path="/WildCardQuery.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359929131131" ignored="false" />
     <file path="/readme" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359598576310" ignored="false" />
-    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361683001416" ignored="false" />
+    <file path="/Dummy.txt" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1367295719818" ignored="false" />
     <file path="/readme.md" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361683189427" ignored="false" />
     <file path="/APIMode.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359599790196" ignored="false" />
     <file path="/ServiceNotFound.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1359600829882" ignored="false" />
@@ -193,6 +193,33 @@
     <file path="/Times.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361679996311" ignored="false" />
     <file path="/Bus.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361680195336" ignored="false" />
     <file path="/NodeWithHref.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1361680137552" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362754667893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/TimeServerHandler.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362754445916" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362793641085" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/core/ShoutCastServer.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362794433968" ignored="false" />
+    <file path="/ShoutCastServer.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362794433590" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/core/ShoutCastHandler.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362793503883" ignored="false" />
+    <file path="/ShoutCastHandler.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362793487663" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/mp3/Mp3Streamer.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362767381059" ignored="false" />
+    <file path="/Mp3Streamer.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362767687464" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/mp3/MP3File.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362764980717" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/mp3/Mp3File.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362765931335" ignored="false" />
+    <file path="/Mp3File.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362765224963" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/mp3/Mp3Loader.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362767687808" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/mp3/Mp3Helper.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362791100444" ignored="false" />
+    <file path="/Mp3Helper.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362790691605" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/MP3Decoder.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362791156604" ignored="false" />
+    <file path="$PROJECT_DIR$/../ShoutcastServer/src/com/tkblackbelt/shoutcast/mp3/MP3Decoder.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362794230978" ignored="false" />
+    <file path="/MP3Decoder.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362794225504" ignored="false" />
+    <file path="$PROJECT_DIR$/../icecast/locality-icecast-read-only/src/main/java/se/slackers/locality/shout/ShoutServer.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362796276635" ignored="false" />
+    <file path="$PROJECT_DIR$/../icecast/locality-icecast-read-only/src/main/java/Main.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362798677829" ignored="false" />
+    <file path="$PROJECT_DIR$/../icecast/locality-icecast-read-only/src/main/java/se/slackers/locality/data/MetadataManager.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362795351039" ignored="false" />
+    <file path="$PROJECT_DIR$/../icecast/locality-icecast-read-only/src/main/java/se/slackers/locality/media/reader/mp3/Mp3MediaReader.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362800098404" ignored="false" />
+    <file path="/Mp3MediaReader.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362800083563" ignored="false" />
+    <file path="/ShoutServer.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362796273218" ignored="false" />
+    <file path="$PROJECT_DIR$/../icecast/locality-icecast-read-only/src/main/java/se/slackers/locality/media/queue/MediaQueueImpl.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362796900457" ignored="false" />
+    <file path="$PROJECT_DIR$/../icecast/locality-icecast-read-only/src/main/java/se/slackers/locality/media/reader/ByteStreamReader.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362799775066" ignored="false" />
+    <file path="/ByteStreamReader.java" changelist="6f51a1c7-2595-4db7-904a-9f88be8322d4" time="1362799699671" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +234,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -241,7 +269,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -251,64 +278,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="30" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="39" selection-start="329" selection-end="329" vertical-scroll-proportion="0.20411664">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chuck/test/RequestTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="87" selection-start="1886" selection-end="1963" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoutesService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chuck/service/RoutesService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NoticeService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chuck/service/NoticeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatusService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chuck/service/StatusService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="13" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BusStopService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chuck/service/BusStopService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="24" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.0">
+            <state line="8" column="4" selection-start="110" selection-end="110" vertical-scroll-proportion="0.1556064">
               <folding />
             </state>
           </provider>
@@ -342,12 +315,12 @@
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/schedule/RouteSchedule.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/schedule/Bus.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/schedule/Times.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/Main.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/service/TransitService.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/stops/Stop.java" />
         <option value="$PROJECT_DIR$/src/com/chuck/core/result/location/Locations.java" />
-        <option value="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/src/com/chuck/test/RequestTest.java" />
+        <option value="$PROJECT_DIR$/src/com/chuck/Main.java" />
       </list>
     </option>
   </component>
@@ -420,6 +393,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -460,54 +434,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WinnipegTransitAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WinnipegTransitAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chuck" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WinnipegTransitAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WinnipegTransitAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chuck" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -527,9 +456,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.30023924" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.30023924" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -858,31 +787,32 @@
       <created>1361683004726</created>
       <updated>1361683004726</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added xml mappings for Schedules and a helper method to build the needed URI request">
+      <created>1361683196637</created>
+      <updated>1361683196637</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32516703" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296617" sideWeight="0.672" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19370331" sideWeight="0.6781737" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32182628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1814301" sideWeight="0.6781737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32182628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -891,7 +821,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32516703" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -968,118 +901,84 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/schedule/RouteSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="18" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="49" column="18" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/schedule/Bus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="18" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="44" column="18" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/schedule/Times.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="21" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="73" column="21" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/TransitService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="17" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.3327616">
-          <folding />
-        </state>
+        <state line="74" column="17" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.3327616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/StatusService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="13" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="13" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.03024911" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/message/SystemMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="29" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.44596913">
-          <folding />
-        </state>
+        <state line="33" column="29" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.44596913" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/NoticeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="13" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.03024911" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/stops/Stop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="34" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.3327616">
-          <folding />
-        </state>
+        <state line="33" column="34" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.3327616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/status/Status.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.3327616">
-          <folding />
-        </state>
+        <state line="28" column="13" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.3327616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/LocationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="16" selection-start="3417" selection-end="3417" vertical-scroll-proportion="1.1080618">
-          <folding />
-        </state>
+        <state line="100" column="16" selection-start="3417" selection-end="3417" vertical-scroll-proportion="1.1080618" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/BusStopService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="24" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="111" column="24" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.727758" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/core/result/location/Locations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="38" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.39108062">
+        <state line="44" column="38" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.39108062" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chuck/test/RequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/service/RoutesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="13" selection-start="993" selection-end="993" vertical-scroll-proportion="0.66548043" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chuck/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chuck/test/RequestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="87" selection-start="1886" selection-end="1963" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="329" selection-end="329" vertical-scroll-proportion="0.20411664">
+        <state line="8" column="4" selection-start="110" selection-end="110" vertical-scroll-proportion="0.1556064">
           <folding />
         </state>
       </provider>
